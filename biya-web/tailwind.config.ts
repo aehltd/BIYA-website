@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'biya-red': '#F33535',
+        'biya-blue': '#34B3F1',
+        'biya-gray': '#EDF2F6',
       },
     },
   },
