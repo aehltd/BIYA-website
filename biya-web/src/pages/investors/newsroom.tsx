@@ -23,7 +23,7 @@ export default function Newsroom() {
             component="h1"
             gutterBottom
           >
-            "Press Releases"
+            Press Releases
           </Typography>
           <br />
         </div>

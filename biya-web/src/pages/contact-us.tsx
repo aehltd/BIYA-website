@@ -38,16 +38,16 @@ export default function NotFound() {
             Baiya International Group Inc. (China)
           </Typography>
           <Typography variant="h6">Address:</Typography>
-          <Typography variant="body">
+          <Typography variant="body1">
             Yifang Capital Industrial Park No.33 Pingshan Industrial Road,
             Building A, 16F Tangxia, Dongguan, Guangdong, China
           </Typography>
           <br />
           <Typography variant="h6">Phone:</Typography>
-          <Typography variant="body">+86 0769-88785888</Typography>
+          <Typography variant="body1">+86 0769-88785888</Typography>
           <br />
           <Typography variant="h6">Email:</Typography>
-          <Typography variant="body">info@biyainc.com</Typography>
+          <Typography variant="body1">info@biyainc.com</Typography>
           <br />
         </Grid>
       </Grid>
