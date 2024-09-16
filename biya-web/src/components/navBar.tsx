@@ -128,7 +128,7 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" className="bg-biya-gray">
+      <AppBar component="nav" className="bg-gray-100">
         <Toolbar className="justify-between">
           <IconButton
             color="inherit"
@@ -142,7 +142,6 @@ export default function DrawerAppBar(props: Props) {
           </IconButton>
           <div className="w-20">
             <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
-             {/* <Image src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png" fill={true} alt="Picture of the author"/> */}
           </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
