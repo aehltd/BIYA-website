@@ -16,15 +16,15 @@ export default function Footer() {
             <Link href="/" passHref>
               <Typography className="hover:text-biya-blue">Home</Typography>
             </Link>
-            <Link href="/" passHref>
+            <Link href="/about" passHref>
               <Typography className="hover:text-biya-blue">About Us</Typography>
             </Link>
-            <Link href="/" passHref>
+            <Link href="/investors-overview" passHref>
               <Typography className="hover:text-biya-blue">
                 Investors
               </Typography>
             </Link>
-            <Link href="/" passHref>
+            <Link href="/contact-us" passHref>
               <Typography className="hover:text-biya-blue">Contact</Typography>
             </Link>
           </div>

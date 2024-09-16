@@ -97,7 +97,7 @@ export default function About() {
               Companies.
             </Typography>
           </Grid>
-          <Grid size={12}>
+          {/* <Grid size={12}>
             <Typography
               className="text-black font-bold tracking-widest py-4"
               variant="h4"
@@ -136,7 +136,7 @@ export default function About() {
               since such blue-collar labor started to work for the Employing
               Companies.
             </Typography>
-          </Grid>
+          </Grid> */}
           <Grid size={12}>
             <Typography
               className="text-black font-bold tracking-widest py-4"

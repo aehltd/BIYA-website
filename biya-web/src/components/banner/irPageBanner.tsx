@@ -39,7 +39,7 @@ const IRBanner: React.FC<IRBannerProps> = ({
     // </Box>
 
     <div>
-      <Typography variant="h4" component="h1" gutterBottom>
+      <Typography className="font-bold tracking-wider" variant="h4" component="h1" gutterBottom>
         {title}
       </Typography>
     </div>

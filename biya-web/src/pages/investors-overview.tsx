@@ -3,6 +3,7 @@ import Head from "next/head";
 import InvestorsPageBanner from "../components/banner/investorsPageBanner";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
+import Divider from "@mui/material/Divider";
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
           </Grid>
           <Grid size={12}>
             <img
-              src="https://res.cloudinary.com/aehl/image/upload/v1726244508/image1_wapdy2.png"
+              src="https://res.cloudinary.com/aehl/image/upload/v1726508826/banner4_rwlixj.png"
               alt="Business Description"
             ></img>
           </Grid>
@@ -52,6 +53,31 @@ export default function About() {
               within China, primarily in the core manufacturing regions
               including the Pearl River Delta and Yangtze River Delta region.
               Baiya International Group Inc.
+            </Typography>
+          </Grid>
+          <Grid size={12}>
+            <Typography
+              className="text-black font-bold tracking-widest py-4"
+              variant="h4"
+              component="h4"
+            >
+              Financials
+            </Typography>
+          </Grid>
+          <Grid size={6}>
+            <img
+              src="https://res.cloudinary.com/aehl/image/upload/v1726508826/image1_w1beek.png"
+              alt="Business Description"
+            ></img>
+          </Grid>
+          <Grid size={6}>
+            <Typography variant="h6" gutterBottom>
+              Download financial data
+            </Typography>
+            <Divider />
+            <Typography variant="subtitle2" gutterBottom>
+              To request our financial information, please contact us via email:
+              info@biyainc.com
             </Typography>
           </Grid>
         </Grid>

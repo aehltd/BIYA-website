@@ -35,7 +35,7 @@ const navItems = [
   },
   {
     name: "Investors",
-    path: "/investors_overview",
+    path: "/investors-overview",
     subItems: [
       { name: "Newsroom", path: "/investors/newsroom" },
       { name: "SEC Filings", path: "/investors/sec" },
@@ -45,7 +45,7 @@ const navItems = [
       { name: "IR Contact", path: "/investors/ir" },
     ],
   },
-  { name: "Contact", path: "/contact" },
+  { name: "Contact", path: "/contact-us" },
 ];
 
 export default function DrawerAppBar(props: Props) {
