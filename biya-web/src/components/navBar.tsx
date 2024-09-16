@@ -133,7 +133,6 @@ export default function DrawerAppBar(props: Props) {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            className="text-black"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
@@ -146,7 +145,7 @@ export default function DrawerAppBar(props: Props) {
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Link href={item.path} passHref key={item.name} legacyBehavior>
-                <Button className="text-black">{item.name}</Button>
+                <Button color="inherit">{item.name}</Button>
               </Link>
             ))}
           </Box>
