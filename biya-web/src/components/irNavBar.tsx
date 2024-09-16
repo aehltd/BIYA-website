@@ -15,7 +15,7 @@ const investorSubItems = [
   { name: "IR Contact", path: "/investors/ir" },
 ];
 
-const irNavBar = () => {
+const IrNavBar = () => {
   const router = useRouter();
 
   // Check if the current path starts with "/investors"
@@ -38,5 +38,4 @@ const irNavBar = () => {
     </Box>
   );
 };
-
-export default irNavBar;
+export default IrNavBar;

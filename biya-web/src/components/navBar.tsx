@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 
-import IrNavBar from "../components/irNavBar"
+import IrNavBar from "../components/irNavBar";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -35,7 +35,7 @@ const navItems = [
   },
   {
     name: "Investors",
-    path: "/investors",
+    path: "/investors_overview",
     subItems: [
       { name: "Newsroom", path: "/investors/newsroom" },
       { name: "SEC Filings", path: "/investors/sec" },
@@ -142,6 +142,7 @@ export default function DrawerAppBar(props: Props) {
           </IconButton>
           <div className="w-20">
             <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
+             {/* <Image src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png" fill={true} alt="Picture of the author"/> */}
           </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
@@ -173,7 +174,6 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      
     </Box>
   );
 }
