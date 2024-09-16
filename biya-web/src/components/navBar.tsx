@@ -128,7 +128,7 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" className="bg-gray-100">
+      <AppBar component="nav" color="inherit">
         <Toolbar className="justify-between">
           <IconButton
             color="inherit"

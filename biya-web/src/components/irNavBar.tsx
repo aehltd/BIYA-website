@@ -24,7 +24,7 @@ const IrNavBar = () => {
   if (!isInvestorsPage) return null; // Don't render if not on /investors
 
   return (
-    <Box className="bg-biya-gray justify-between px-10" sx={{ display: "flex" }}>
+    <Box className="justify-between px-10" sx={{ display: "flex" }}>
       <Typography className="text-black font-bold flex text-center" variant="h5">
         Investor Relations
       </Typography>
