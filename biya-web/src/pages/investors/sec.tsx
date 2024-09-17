@@ -28,11 +28,11 @@ export default function Newsroom() {
       <IrPageBanner
         title="SEC Filings"
       />
-      <div className="">
+      <div >
         <QMod tool="filings" params={JSON.stringify(params)} datatracked />
       </div>
       <div className="bg-local flex flex-col w-full items-center">
-        <div className="">
+        <div>
           <QModFooter />
         </div>
       </div>
