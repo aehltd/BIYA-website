@@ -2,6 +2,8 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
+import QModFooter from "@/components/QModFooter";
+
 export default function Newsroom() {
   return (
     <div className="container pt-[60px]">
@@ -23,13 +25,18 @@ export default function Newsroom() {
             component="h1"
             gutterBottom
           >
-            Press Releases
+            -- Press Releases --
           </Typography>
+          <div className="bg-local flex flex-col w-full items-center">
+            <div className="">
+              <QModFooter />
+            </div>
+          </div>
           <br />
         </div>
       </div>
 
-      <div>
+      <div className="pt-8">
         <Typography
           className="font-semibold tracking-wider"
           variant="h5"
