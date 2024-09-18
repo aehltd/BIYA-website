@@ -1,33 +1,17 @@
 import { useEffect } from "react";
 
 export default function QModFooter() {
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.id = "qmod";
-  //   script.type = "application/javascript";
-  //   script.src = "https://qmod.quotemedia.com/js/qmodLoader.js";
-  //   script.setAttribute("data-qmod-wmid", "101150");
-  //   document.body.appendChild(script);
-
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
-
   useEffect(() => {
-    // Ensure that window is available and we are in the browser environment
-    if (typeof window !== "undefined") {
-      const script = document.createElement("script");
-      script.id = "qmod";
-      script.type = "application/javascript";
-      script.src = "https://qmod.quotemedia.com/js/qmodLoader.js";
-      script.setAttribute("data-qmod-wmid", "101150");
-      document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.id = "qmod";
+    script.type = "application/javascript";
+    script.src = "https://qmod.quotemedia.com/js/qmodLoader.js";
+    script.setAttribute("data-qmod-wmid", "101150");
+    document.body.appendChild(script);
 
-      return () => {
-        document.body.removeChild(script);
-      };
-    }
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (

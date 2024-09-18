@@ -26,17 +26,15 @@ export default function SEC() {
 
   return (
     <div id="container" className="container pt-[60px]">
-      <IrPageBanner
-        title="SEC Filings"
-      />
-    <div className="row">
-      <QMod tool="filings" params={JSON.stringify(params)} datatracked={true}/>
-    </div>
-    <div className="bg-local flex flex-col w-full items-center">
+      <IrPageBanner title="SEC Filings" />
       <div className="row">
-        <QModFooter />
+        <QMod tool="filings" params={JSON.stringify(params)} datatracked />
       </div>
-    </div>
+      <div className="bg-local flex flex-col w-full items-center">
+        <div className="row">
+          <QModFooter />
+        </div>
+      </div>
     </div>
   );
 }

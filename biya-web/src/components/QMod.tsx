@@ -12,8 +12,7 @@ export default function QMod({
       data-qmod-tool={tool}
       data-qmod-params={params}
       className="qtool"
-      // data-qmod-tracked={datatracked}
-      data-qmod-tracked={datatracked.toString()}
+      data-qmod-tracked={datatracked}
     ></div>
   );
 }
