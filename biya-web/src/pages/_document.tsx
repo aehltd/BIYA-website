@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <script id="qmod" type="application/javascript" src="http://qmod.quotemedia.com/js/qmodLoader.js" data-qmod-wmid="101150" async></script>
+      {/* <script id="qmod" type="application/javascript" src="http://qmod.quotemedia.com/js/qmodLoader.js" data-qmod-wmid="101150" async></script> */}
       </Head>
       <meta charSet="utf-8" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
