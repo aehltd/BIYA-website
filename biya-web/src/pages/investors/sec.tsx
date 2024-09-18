@@ -23,19 +23,20 @@ export default function SEC() {
     datePickerFormat: "Y-m-d",
     symbol: "AEHL",
   };
+
   return (
-    <div className="container pt-[60px]">
+    <div id="container" className="container pt-[60px]">
       <IrPageBanner
         title="SEC Filings"
       />
-      <div >
-        <QMod tool="filings" params={JSON.stringify(params)} datatracked />
+    <div className="row">
+      <QMod tool="filings" params={JSON.stringify(params)} datatracked={true} />
+    </div>
+    <div className="bg-local flex flex-col w-full items-center">
+      <div className="row">
+        <QModFooter />
       </div>
-      <div className="bg-local flex flex-col w-full items-center">
-        <div>
-          <QModFooter />
-        </div>
-      </div>
+    </div>
     </div>
   );
 }
