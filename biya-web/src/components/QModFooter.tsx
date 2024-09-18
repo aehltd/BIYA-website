@@ -6,7 +6,9 @@ export default function QModFooter() {
     script.id = "qmod";
     script.type = "application/javascript";
     script.src = "https://qmod.quotemedia.com/js/qmodLoader.js";
+    script.async;
     script.setAttribute("data-qmod-wmid", "101150");
+    script.setAttribute("data-qmod-env", "app");
     document.body.appendChild(script);
 
     return () => {
