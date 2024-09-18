@@ -25,7 +25,8 @@ export default function Newsroom() {
             component="h1"
             gutterBottom
           >
-            -- Press Releases --
+            {/* -- Press Releases -- */}
+            <div data-qmod-tool="detailedquotetabchartnews" data-qmod-params='{ "symbol" : "GOOGL" }' className="qtool"></div>
           </Typography>
           <div className="bg-local flex flex-col w-full items-center">
             <div className="">

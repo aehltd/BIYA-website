@@ -85,7 +85,7 @@ export default function About() {
         {board.map((entry, index) => {
           return (
             <Grid key={index} size={{ md: 6, xs: 12 }}>
-              <Card sx={{height:{md:400}}}>
+              <Card sx={{ height: { md: 400 } }}>
                 <CardContent>
                   <div className="flex items-center">
                     <Avatar
@@ -93,7 +93,7 @@ export default function About() {
                       src={entry.image}
                       sx={{
                         width: 56,
-                        height: 56
+                        height: 56,
                       }}
                     />
                     <Typography
