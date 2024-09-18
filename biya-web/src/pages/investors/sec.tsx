@@ -30,7 +30,7 @@ export default function SEC() {
         title="SEC Filings"
       />
     <div className="row">
-      <QMod tool="filings" params={JSON.stringify(params)} datatracked={true} />
+      <QMod tool="filings" params={JSON.stringify(params)} datatracked={true}/>
     </div>
     <div className="bg-local flex flex-col w-full items-center">
       <div className="row">
