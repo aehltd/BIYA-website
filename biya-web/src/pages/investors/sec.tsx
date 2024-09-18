@@ -2,7 +2,7 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 import QMod from "@/components/QMod";
 import QModFooter from "@/components/QModFooter";
 
-export default function Newsroom() {
+export default function SEC() {
   const params = {
     lang: "en",
     socialshare: true,
