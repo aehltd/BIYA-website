@@ -6,7 +6,7 @@ export default function contactUsPageBanner() {
         className="h-[65vh] flex"
         style={{
           backgroundImage:
-            'url("https://res.cloudinary.com/aehl/image/upload/v1726162462/Background2_qrixhf.png")',
+            'url("https://res.cloudinary.com/aehl/image/upload/v1726250645/wallpaper5_h800_knvzjc.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

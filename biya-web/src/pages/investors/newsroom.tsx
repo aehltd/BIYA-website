@@ -65,7 +65,7 @@ export default function Newsroom() {
             No events scheduled.
           </Typography>
         </div>
-        <div>
+        <div className="py-5">
           <Typography
             className="tracking-wider"
             variant="h5"
