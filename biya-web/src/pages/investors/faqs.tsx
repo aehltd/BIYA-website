@@ -1,4 +1,5 @@
 import IrPageBanner from "../../components/banner/irPageBanner";
+import ComingSoon from "@/components/upComing";
 
 type FAQItem = {
   question: string;
@@ -16,7 +17,7 @@ export default function FAQs() {
   return (
     <div className="container pt-[60px] pb-5">
       <IrPageBanner title="FAQs" />
-      <div>
+      {/* <div>
         <ul className="flex flex-col space-y-8">
           {FAQ.map((item, index) => (
             <li key={index} className="flex flex-col">
@@ -27,7 +28,8 @@ export default function FAQs() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
+      <ComingSoon/>
     </div>
   );
 }

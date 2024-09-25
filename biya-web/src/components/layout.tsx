@@ -1,28 +1,3 @@
-// import Head from "next/head";
-// import NavBar from "./navBar";
-
-// export default function Layout({ children }: { children: React.ReactNode }) {
-//   return (
-//     <>
-//       <Head>
-//         <title>BIYA</title>
-//       </Head>
-//       <div className="min-h-screen max-h-screen flex flex-col overflow-hidden">
-//         {/* <header>BIYA</header> */}
-//         <div className="flex-none">
-//           <NavBar />
-//         </div>
-//         <div className="flex flex-1 flex-col overflow-y-auto">
-//           <main className="flex-1">{children}</main>
-//           {/* <footer className="flex-none">
-//             <Footer />
-//           </footer> */}
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
 import Head from "next/head";
 import NavBar from "./navBar";
 import Footer from "./footer"
