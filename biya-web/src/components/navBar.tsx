@@ -105,7 +105,12 @@ export default function DrawerAppBar(props: Props) {
                   <List component="div" disablePadding>
                     {item.subItems.map((subItem) => (
                       <ListItem key={subItem.name} sx={{ paddingLeft: "20px" }}>
-                        <Link href={subItem.path} passHref legacyBehavior>
+                        <Link
+                          href={subItem.path}
+                          passHref
+                          legacyBehavior
+                          scroll={false}
+                        >
                           <ListItemButton>
                             <ListItemText primary={subItem.name} />
                           </ListItemButton>
@@ -139,9 +144,13 @@ export default function DrawerAppBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <div className="w-20">
-            <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
+          <div className="flex">
+            <div className="w-20">
+              <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
+            </div>
+            <Typography className="px-3 md:flex hidden" variant="h6">Baiya International Group Inc.</Typography>
           </div>
+
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Link href={item.path} passHref key={item.name} legacyBehavior>

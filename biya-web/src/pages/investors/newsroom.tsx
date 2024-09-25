@@ -2,7 +2,9 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
-import QModFooter from "@/components/QModFooter";
+import ComingSoon from "@/components/upComing";
+
+// import QModFooter from "@/components/QModFooter";
 
 export default function Newsroom() {
   return (
@@ -18,14 +20,14 @@ export default function Newsroom() {
           Press Releases
         </Typography>
         <Divider />
-        <div>
+        <ComingSoon/>
+        {/* <div>
           <Typography
             className="tracking-wider"
             variant="h5"
             component="h1"
             gutterBottom
           >
-            -- Press Releases --
             <div data-qmod-tool="filings" data-qmod-params='{ "symbol" : "GOOGL" }' className="qtool"></div>
           </Typography>
           <div className="bg-local flex flex-col w-full items-center">
@@ -34,7 +36,7 @@ export default function Newsroom() {
             </div>
           </div>
           <br />
-        </div>
+        </div> */}
       </div>
 
       <div className="pt-8">
@@ -65,7 +67,7 @@ export default function Newsroom() {
             No events scheduled.
           </Typography>
         </div>
-        <div>
+        <div className="py-5">
           <Typography
             className="tracking-wider"
             variant="h5"
