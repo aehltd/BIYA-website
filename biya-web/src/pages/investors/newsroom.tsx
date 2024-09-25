@@ -4,7 +4,7 @@ import Divider from "@mui/material/Divider";
 
 import ComingSoon from "@/components/upComing";
 
-import QModFooter from "@/components/QModFooter";
+// import QModFooter from "@/components/QModFooter";
 
 export default function Newsroom() {
   return (

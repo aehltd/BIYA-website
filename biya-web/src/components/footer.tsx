@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid2";
 
 export default function Footer() {

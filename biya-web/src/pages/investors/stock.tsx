@@ -1,5 +1,5 @@
 import IrPageBanner from "../../components/banner/irPageBanner";
-import QModFooter from "@/components/QModFooter";
+// import QModFooter from "@/components/QModFooter";
 
 import ComingSoon from "@/components/upComing";
 
