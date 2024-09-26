@@ -50,11 +50,11 @@ export default function Footer() {
             <Grid size={{ xs: 12, md: 4 }}>
               <div>
                 <Typography className="font-bold">Contact Us:</Typography>
-                <Typography>Suite 7540</Typography>
+                <Typography>5Q, No. 5 Golf Avenue,</Typography>
                 <Typography>
-                  The Empire State Building, 350 Fifth Ave
+                  Guangpei Community, Guanlan Street
                 </Typography>
-                <Typography>New York, NY, 10118 USA</Typography>
+                <Typography>Longhua District, Shenzhen, China</Typography>
               </div>
             </Grid>
           </Grid>
