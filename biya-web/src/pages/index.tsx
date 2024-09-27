@@ -8,13 +8,6 @@ export default function Home() {
     <div>
       <HomePageBanner />
       <div className="container py-8">
-        {/* <Typography
-          className="text-biya-red font-bold tracking-widest py-8"
-          variant="h4"
-          component="h4"
-        >
-          — About Us
-        </Typography> */}
         <Grid container spacing={2}>
           <Grid size={12}>
             <Typography

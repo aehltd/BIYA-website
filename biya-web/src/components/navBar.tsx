@@ -144,11 +144,15 @@ export default function DrawerAppBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <div className="flex">
+          <div className="flex items-center">
             <div className="w-20">
-              <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
+              <Link href="/">
+                <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
+              </Link>
             </div>
-            <Typography className="px-3 md:flex hidden" variant="h6">Baiya International Group Inc.</Typography>
+            <Typography className="px-5 md:flex hidden capitalize" variant="h6">
+              Baiya International Group Inc.
+            </Typography>
           </div>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
