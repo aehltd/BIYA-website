@@ -6,7 +6,7 @@ import ComingSoon from "@/components/upComing";
 
 export default function Stock() {
   const detailedQuoteTabChartParams = {
-    symbol: "AEHL",
+    symbol: "BIYA",
     lang: "en",
     chcon: "off",
     chfrmon: "off",
@@ -32,6 +32,7 @@ export default function Stock() {
   return (
     <div className="container pt-[60px]">
       <IrPageBanner title="Stock" />
+      <ComingSoon />
       <div className="">
         <QMod tool="detailedquotetabchart" params={JSON.stringify(detailedQuoteTabChartParams)} datatracked />
       </div>
@@ -40,7 +41,6 @@ export default function Stock() {
           <QModFooter />
         </div>
       </div>
-      <ComingSoon />
     </div>
   );
 }
