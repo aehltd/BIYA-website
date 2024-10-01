@@ -91,7 +91,6 @@ export default function DrawerAppBar(props: Props) {
             {item.subItems && (
               <>
                 <Button
-                  className="text-black"
                   onClick={handleInvestorsToggle}
                   sx={{
                     width: "100%",
@@ -111,7 +110,7 @@ export default function DrawerAppBar(props: Props) {
                           legacyBehavior
                           scroll={false}
                         >
-                          <ListItemButton>
+                          <ListItemButton onClick={handleDrawerToggle}>
                             <ListItemText primary={subItem.name} />
                           </ListItemButton>
                         </Link>
