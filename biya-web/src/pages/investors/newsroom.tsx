@@ -2,8 +2,7 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
-// import ComingSoon from "@/components/upComing";
-
+import ComingSoon from "@/components/upComing";
 import QModFooter from "@/components/QModFooter";
 import QMod from "@/components/QMod";
 
@@ -26,7 +25,7 @@ export default function Newsroom() {
     yearSelectNumYears: 2,
     yearSelected: 0,
     datePickerFormat: "Y-m-d",
-    symbol: "AEHL",
+    symbol: "BIYA",
   };
   return (
     <div className="container pt-[60px]">
@@ -41,7 +40,7 @@ export default function Newsroom() {
           Press Releases
         </Typography>
         <Divider />
-        {/* <ComingSoon/> */}
+        <ComingSoon/>
         <div>
           <div>
             <QMod
