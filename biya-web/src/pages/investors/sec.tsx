@@ -23,13 +23,13 @@ export default function SEC() {
     yearSelectNumYears: 2,
     yearSelected: 0,
     datePickerFormat: "Y-m-d",
-    symbol: "AEHL",
+    symbol: "BIYA",
   };
 
   return (
     <div id="container" className="container pt-[60px]">
       <IrPageBanner title="SEC Filings" />
-      <div className="row">
+      <div className="">
         <QMod tool="filings" params={JSON.stringify(params)} datatracked />
       </div>
       <div className="bg-local flex flex-col w-full items-center">
