@@ -13,6 +13,11 @@ const config: Config = {
         'biya-blue': '#34B3F1',
         'biya-gray': '#EDF2F6',
       },
+      fontFamily: {
+        dmSerif: ['"DM Serif Text"', 'serif'],
+        kanit: ['Kanit', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'], 
+      },
     },
   },
   plugins: [],

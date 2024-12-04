@@ -35,8 +35,6 @@ export default function NotFound() {
               <Typography variant="body1">weilaizhang@baiyainc.com</Typography>
               <br />
             </Box>
-            {/* </Grid> */}
-            {/* <Grid size={6}> */}
             <Box>
               <Typography variant="h5" className="py-2 font-semibold">
                 Baiya International Group Inc. (China)
