@@ -2,7 +2,6 @@ import HomePageBanner from "../components/banner/homePageBanner";
 
 import Image from 'next/image';
 
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
 
 export default function Home() {
