@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import AboutPageBanner from "../components/banner/aboutPageBanner";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid2";
-import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
+
+import AboutUsServices from "../components/aboutUs/services";
 
 export default function About() {
   return (
@@ -21,7 +18,8 @@ export default function About() {
       <AboutPageBanner />
 
       <div className="container py-8">
-        <Grid container spacing={3}>
+        <AboutUsServices/>
+        {/* <Grid container spacing={3}>
           <Grid size={12}>
             <Typography
               className="text-black font-bold tracking-widest py-4"
@@ -156,7 +154,7 @@ export default function About() {
               </a>
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
       </div>
     </>
   );

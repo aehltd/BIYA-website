@@ -10,9 +10,11 @@ import Divider from "@mui/material/Divider";
 
 import Image from "next/image";
 
-import Board from "../../components/investors/Board";
+import Board from "../../components/investors/board";
+import CommitteeComposition from "@/components/investors/committeeComposition";
+import DiversityMatrix from "@/components/investors/diversityMatrix";
 import DocumentsTable from "@/components/investors/Documents-table";
-import ComingSoon from "@/components/upComing";
+// import ComingSoon from "@/components/upComing";
 
 export default function Corporate() {
   const [value, setValue] = React.useState("1");
@@ -51,8 +53,8 @@ export default function Corporate() {
             </div>
           </TabPanel>
           <TabPanel value="2"><DocumentsTable/></TabPanel>
-          <TabPanel value="3"><ComingSoon/></TabPanel>
-          <TabPanel value="4"><ComingSoon/></TabPanel>
+          <TabPanel value="3"><CommitteeComposition/></TabPanel>
+          <TabPanel value="4"><DiversityMatrix/></TabPanel>
         </TabContext>
       </Box>
     </div>
