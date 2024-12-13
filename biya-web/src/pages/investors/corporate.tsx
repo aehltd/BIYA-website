@@ -10,7 +10,7 @@ import Divider from "@mui/material/Divider";
 
 import Image from "next/image";
 
-import Board from "../../components/investors/board"
+import BoardOfDirectors from "../../components/investors/board"
 import CommitteeComposition from "@/components/investors/committeeComposition";
 import DiversityMatrix from "@/components/investors/diversityMatrix";
 import DocumentsTable from "@/components/investors/Documents-table";
@@ -40,7 +40,7 @@ export default function Corporate() {
             {" "}
             <Typography>Board of Directors</Typography>
             <div className="py-5">
-              <Board />
+              <BoardOfDirectors />
             </div>
             <Divider />
             <div className="py-3">
