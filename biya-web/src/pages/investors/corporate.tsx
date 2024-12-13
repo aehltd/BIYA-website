@@ -10,7 +10,7 @@ import Divider from "@mui/material/Divider";
 
 import Image from "next/image";
 
-import BoardOfDirectors from "../../components/investors/board"
+import BoardOfDirectors from "../../components/investors/board2"
 import CommitteeComposition from "@/components/investors/committeeComposition";
 import DiversityMatrix from "@/components/investors/diversityMatrix";
 import DocumentsTable from "@/components/investors/Documents-table";
