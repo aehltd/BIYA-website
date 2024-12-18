@@ -1,5 +1,4 @@
 import IrPageBanner from "../../components/banner/irPageBanner";
-import ComingSoon from "@/components/upComing";
 
 type FAQItem = {
   question: string;
