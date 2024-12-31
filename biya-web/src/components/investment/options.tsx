@@ -47,7 +47,7 @@ const Options: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }} // Final state: visible and in place
                 transition={{ duration: 0.8, delay: 0.8 }} // Animation duration and delay
             >
-                <h1 className="text-4xl px-1 py-4 font-dmSerif font-bold">Investment Options</h1>
+                <h1 className="text-4xl px-1 py-4 font-dmSerif font-bold">Explore Our Investment Opportunities</h1>
             </motion.div>
             <Grid container spacing={6} justifyContent="center">
                 {cardData.map((card, index) => (
