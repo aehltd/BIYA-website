@@ -5,7 +5,7 @@ import InvestmentBanner from '../components/banner/investmentBanner';
 import InvestmentOptions from '../components/investment/options';
 import Cooperate from '@/components/investment/cooperate';
 import SignSteppers from '@/components/investment/signSteppers';
-import SignNow from '../components/investment/signNow';
+// import SignNow from '../components/investment/signNow';
 
 const Financing: React.FC = () => {
     return (
@@ -28,11 +28,11 @@ const Financing: React.FC = () => {
                     <SignSteppers />
                 </div>
             </div>
-            <div className='bg-white-linen-100 w-full py-5'>
+            {/* <div className='bg-white-linen-100 w-full py-5'>
                 <div className=' container w-2/3'>
                     <SignNow />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

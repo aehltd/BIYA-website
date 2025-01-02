@@ -12,8 +12,8 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
+import TextField from '@mui/material/TextField';
 
-import AnvilSignFormSet from './anvilSignFormSet';
 import { InvestmentOptions, BankOptions } from './stepOptions';
 
 const steps = [
@@ -60,8 +60,13 @@ const SignSteppers: React.FC = () => {
     const [activeStep, setActiveStep] = React.useState(0);
     const [selectedInvestment, setSelectedInvestment] = React.useState<InvestmentOptions>(InvestmentOptions.F1);
     const [selectedBank, setSelectedBank] = React.useState<BankOptions>(BankOptions.BankA);
+    const [clientInfo, setClientInfo] = React.useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+    });
 
-    // Handle navigation steps
+    // Handle Button Navigation Steps
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
@@ -80,6 +85,54 @@ const SignSteppers: React.FC = () => {
         setSelectedInvestment(InvestmentOptions.F1); // Reset to default
         setSelectedBank(BankOptions.BankA); // Reset to default
     };
+
+    const handleRequestAgreement = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        sendSecuritiesInvitation();
+    }
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { id, value } = e.target;
+        setClientInfo((prev) => ({
+            ...prev,
+            [id]: value,
+        }));
+    };
+
+    // Send Invitation
+    const sendSecuritiesInvitation = async () => {
+        console.log('Sending Securities Invitation');
+        // console.log(clientInfo.firstName, clientInfo.lastName, clientInfo.email);
+        const fields = [
+            { field_name: 'pricePerShare', prefilled_text: '$10' },
+        ]
+        const templateId = 'abc1d8bd38c14630a537ba88fd9c7153abc81220';
+        const documentName = `PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
+        console.log(fields, templateId, documentName);
+        // securitiesRequest(templateId, documentName, fields);
+    }
+
+    // handle Api Requests
+    // const securitiesRequest = async (templateId: string, documentName: string, fields: Array<{ field_name: string; prefilled_text: string }>) => {
+    //     try {
+    //         const response = await fetch('/api/signNowAccessTokenApi', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({ templateId, documentName, fields }),
+    //         });
+
+    //         if (!response.ok) {
+    //             throw new Error(`Error: ${response.status}`);
+    //         }
+
+    //         const data = await response.json();
+    //         console.log('Template Copied Successfully:', data);
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //     }
+    // };
 
     return (
         <div>
@@ -112,7 +165,8 @@ const SignSteppers: React.FC = () => {
                                                     <FormControlLabel value={option} control={<Radio />} label={`${index + 1}. ${option}`} />
                                                     <div className="flex flex-row items-center">
                                                         <CircularProgress className='p-2' variant="determinate" value={(investmentAmounts[index].investment / investmentAmounts[index].amounts) * 100} />
-                                                        <p>${investmentAmounts[index].investment} / ${investmentAmounts[index].amounts}</p>
+                                                        {/* <p>${investmentAmounts[index].investment} / ${investmentAmounts[index].amounts}</p> */}
+                                                        <p> {((investmentAmounts[index].investment / investmentAmounts[index].amounts) * 100).toFixed(2)}% Available </p>
                                                     </div>
                                                 </div>
                                             ))}
@@ -168,22 +222,44 @@ const SignSteppers: React.FC = () => {
                                     <div>
                                         <p className='font-dmSerif text-lg'>
                                             You have selected <span className='font-bold text-red-500'>{selectedInvestment}</span> with <span className='font-bold text-red-500'>{selectedBank}</span>.<br />
-                                            Please enter your information to receive the documents.<br />
                                             Once signed, the agreement will have full legal effect.
                                         </p>
+                                        <div className=' grid grid-cols-2 gap-4'>
+                                            <TextField
+                                                required
+                                                id="firstName"
+                                                label="First Name"
+                                                value={clientInfo.firstName}
+                                                onChange={handleChange}
+                                                variant="filled"
+                                            />
+                                            <TextField
+                                                required
+                                                id="lastName"
+                                                label="Last Name"
+                                                value={clientInfo.lastName}
+                                                onChange={handleChange}
+                                                variant="filled"
+                                            />
+                                            <TextField
+                                                required
+                                                id="email"
+                                                label="Email"
+                                                value={clientInfo.email}
+                                                onChange={handleChange}
+                                                variant="filled"
+                                                className="col-span-2"
+                                            />
+                                        </div>
 
-                                        {/* Include the AnvilSignFormSet component */}
-                                        <AnvilSignFormSet
-                                            selectedInvestment={selectedInvestment}
-                                            selectedBank={selectedBank}
-                                        />
                                         <Button
                                             variant="contained"
-                                            onClick={handleNext}
+                                            onClick={handleRequestAgreement}
                                             sx={{ mt: 1, mr: 1 }}
                                         >
-                                            {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                                            Request Agreement
                                         </Button>
+
                                         <Button
                                             disabled={index === 0}
                                             onClick={handleBack}
@@ -199,7 +275,7 @@ const SignSteppers: React.FC = () => {
                 ))}
             </Stepper>
             {activeStep === steps.length && (
-                <Paper square elevation={0} sx={{ p: 3 }}>
+                <Paper square elevation={0} sx={{ p: 3 }} className='bg-white-linen-100'>
                     <Typography>All steps completed - you&apos;re finished</Typography>
                     <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
                         Reset
