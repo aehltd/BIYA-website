@@ -13,6 +13,11 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
 import TextField from '@mui/material/TextField';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+
+// Framer Motion
+import { motion } from 'framer-motion';
 
 import { InvestmentOptions, BankOptions } from './stepOptions';
 
@@ -29,7 +34,7 @@ const steps = [
     },
     {
         label: 'Step 3: Submit Information and Finalize Agreements',
-        description: <span className='text-sm'>Enter your details and review the documents to start your investment journey. Our team will guide you through a seamless process.</span>,
+        description: '',
     },
 ];
 
@@ -66,6 +71,12 @@ const SignSteppers: React.FC = () => {
         email: '',
     });
 
+    const [stockPrice, setStockPrice] = React.useState([0, 10, 0, 0, 0]);
+    const [isAlertVisible, setIsAlertVisible] = React.useState(false);
+    const [alertMessage, setAlertMessage] = React.useState('');
+    const [loading, setLoading] = React.useState(false);
+
+
     // Handle Button Navigation Steps
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -84,12 +95,13 @@ const SignSteppers: React.FC = () => {
         setActiveStep(0);
         setSelectedInvestment(InvestmentOptions.F1); // Reset to default
         setSelectedBank(BankOptions.BankA); // Reset to default
+        setClientInfo({
+            firstName: '',
+            lastName: '',
+            email: '',
+        });
+        setIsAlertVisible(false);
     };
-
-    const handleRequestAgreement = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-        sendSecuritiesInvitation();
-    }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { id, value } = e.target;
@@ -99,40 +111,68 @@ const SignSteppers: React.FC = () => {
         }));
     };
 
+    // Handle Request Agreement, and check if all fields are filled
+    const handleRequestAgreement = async () => {
+        if (!clientInfo.firstName || !clientInfo.lastName || !clientInfo.email) {
+            setAlertMessage('Please fill in all fields');
+            setIsAlertVisible(true);
+        } else {
+            setLoading(true);
+            try {
+                await sendSecuritiesInvitation(); // Wait for the API call to complete
+                setActiveStep((prevActiveStep) => prevActiveStep + 1); // Move to the next step only on success
+            } catch (error) {
+                setAlertMessage('An error occurred while sending the request. Please try again.');
+                setIsAlertVisible(true);
+            } finally {
+                setLoading(false); // Hide loading animation
+            }
+        }
+    }
+
+    // Function to calculate the average price
+    const calculateAverage = () => {
+        const total = stockPrice.reduce((acc, price) => acc + price, 0);
+        return (total / stockPrice.length).toFixed(2); // Round to 2 decimal places
+    };
+
     // Send Invitation
     const sendSecuritiesInvitation = async () => {
-        console.log('Sending Securities Invitation');
-        // console.log(clientInfo.firstName, clientInfo.lastName, clientInfo.email);
         const fields = [
-            { field_name: 'pricePerShare', prefilled_text: '$10' },
+            { field_name: 'pricePerShare', prefilled_text: `$${calculateAverage()}` },
         ]
         const templateId = 'abc1d8bd38c14630a537ba88fd9c7153abc81220';
         const documentName = `PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
-        console.log(fields, templateId, documentName);
-        // securitiesRequest(templateId, documentName, fields);
+        console.log(fields, templateId, documentName, clientInfo.email);
+
+        try {
+            await securitiesRequest(templateId, documentName, fields, clientInfo.email); // Await the request
+            setIsAlertVisible(false); // Hide the alert on success
+        } catch (error) {
+            throw new Error('Failed to send securities invitation');
+        }
     }
 
     // handle Api Requests
-    // const securitiesRequest = async (templateId: string, documentName: string, fields: Array<{ field_name: string; prefilled_text: string }>) => {
-    //     try {
-    //         const response = await fetch('/api/signNowAccessTokenApi', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //             },
-    //             body: JSON.stringify({ templateId, documentName, fields }),
-    //         });
+    const securitiesRequest = async (templateId: string, documentName: string, fields: Array<{ field_name: string; prefilled_text: string }>, email: string) => {
+        // try {
+        const response = await fetch('/api/signNowAccessTokenApi', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ templateId, documentName, fields, email }),
+        });
 
-    //         if (!response.ok) {
-    //             throw new Error(`Error: ${response.status}`);
-    //         }
-
-    //         const data = await response.json();
-    //         console.log('Template Copied Successfully:', data);
-    //     } catch (error) {
-    //         console.error('Error:', error);
-    //     }
-    // };
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Template Copied Successfully:', data);
+        // } catch (error) {
+        //     console.error('Error:', error);
+        // }
+    };
 
     return (
         <div>
@@ -220,10 +260,26 @@ const SignSteppers: React.FC = () => {
 
                                 {activeStep === 2 && (
                                     <div>
-                                        <p className='font-dmSerif text-lg'>
+                                        <p className='font-dmSerif text-base p-2'>
                                             You have selected <span className='font-bold text-red-500'>{selectedInvestment}</span> with <span className='font-bold text-red-500'>{selectedBank}</span>.<br />
+                                            Enter Your Details Below and Request Agreement.<br />
                                             Once signed, the agreement will have full legal effect.
                                         </p>
+
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 50 }} // Initial state: invisible and shifted down
+                                            animate={isAlertVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on alert visibility
+                                            transition={{ duration: 0.8, delay: 0.0 }} // Animation duration and delay
+                                            className="py-3"
+                                        >
+                                            {isAlertVisible && (
+                                                <Alert severity="error">
+                                                    <AlertTitle>Error</AlertTitle>
+                                                    {alertMessage}
+                                                </Alert>
+                                            )}
+                                        </motion.div>
+
                                         <div className=' grid grid-cols-2 gap-4'>
                                             <TextField
                                                 required
@@ -232,6 +288,7 @@ const SignSteppers: React.FC = () => {
                                                 value={clientInfo.firstName}
                                                 onChange={handleChange}
                                                 variant="filled"
+                                                className='col-span-2 md:col-span-1'
                                             />
                                             <TextField
                                                 required
@@ -240,6 +297,7 @@ const SignSteppers: React.FC = () => {
                                                 value={clientInfo.lastName}
                                                 onChange={handleChange}
                                                 variant="filled"
+                                                className='col-span-2 md:col-span-1'
                                             />
                                             <TextField
                                                 required
@@ -256,8 +314,13 @@ const SignSteppers: React.FC = () => {
                                             variant="contained"
                                             onClick={handleRequestAgreement}
                                             sx={{ mt: 1, mr: 1 }}
+                                            color="success"
                                         >
-                                            Request Agreement
+                                            {loading ? (
+                                                <CircularProgress size={24} sx={{ color: 'white' }} /> // Loading spinner
+                                            ) : (
+                                                'Request Agreement'
+                                            )}
                                         </Button>
 
                                         <Button
@@ -277,6 +340,11 @@ const SignSteppers: React.FC = () => {
             {activeStep === steps.length && (
                 <Paper square elevation={0} sx={{ p: 3 }} className='bg-white-linen-100'>
                     <Typography>All steps completed - you&apos;re finished</Typography>
+                    <Alert severity="success">
+                        <AlertTitle>Success</AlertTitle>
+                        All steps completed - you&apos;re finished. <br />
+                        Please check your email for the agreement.
+                    </Alert>
                     <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
                         Reset
                     </Button>

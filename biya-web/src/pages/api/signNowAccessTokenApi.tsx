@@ -3,9 +3,9 @@ import { NextApiRequest, NextApiResponse } from 'next';
 const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   if (req.method === 'POST') {
     const tokenUrl = 'https://api.signnow.com/oauth2/token';
-    const credentials = 'ZDdmMjU2YjEzOWJiYTZlZDdkOTI1ZGJjYWMxZGZmOTQ6ZTkxYjZhNDYzOWY2NjZkZjMyMDYzMTM2MjJlOGEwNGE=';
+    const credentials = 'YjI3MTYxY2Q4YWNmMGQ5MGFlYjliNDhhZDZhN2I2MjU6OTA5OWI0NDI5MTM5YjZiNDI5YzgxZjJiYTYyODM1Mzc=';
 
-    const { templateId, documentName, fields } = req.body;
+    const { templateId, documentName, fields, email } = req.body;
 
     if (!templateId || !documentName) {
       res.status(400).json({ error: 'Missing required parameters: templateId or documentName' });
@@ -120,7 +120,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
           document_id: `${documentId}`,
           to: [
             {
-              email: "greatfuture7540@gmail.com",
+              email: `${email}`,
               role_id: `${roleId2}`,
               role: "Recipient 1",
               order: "1",
