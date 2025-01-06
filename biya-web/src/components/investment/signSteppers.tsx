@@ -71,7 +71,8 @@ const SignSteppers: React.FC = () => {
         email: '',
     });
 
-    const [stockPrice, setStockPrice] = React.useState([0, 10, 0, 0, 0]);
+    // const [stockPrice, setStockPrice] = React.useState([0, 10, 0, 0, 0]);
+    const [stockPrice] = React.useState([0, 10, 0, 5, 0]);
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
     const [alertMessage, setAlertMessage] = React.useState('');
     const [loading, setLoading] = React.useState(false);
@@ -119,7 +120,16 @@ const SignSteppers: React.FC = () => {
         } else {
             setLoading(true);
             try {
-                await sendSecuritiesInvitation(); // Wait for the API call to complete
+                switch (selectedInvestment) {
+                    case InvestmentOptions.PrivateEquity:
+                        await sendSecuritiesInvitation(); // Wait for the API call to complete
+                        break;
+                    // Add other cases if needed
+                    default:
+                        // Optional: Handle other investments or do nothing
+                        console.log("invalid investment option");
+                        break;
+                }
                 setActiveStep((prevActiveStep) => prevActiveStep + 1); // Move to the next step only on success
             } catch (error) {
                 setAlertMessage('An error occurred while sending the request. Please try again.');
@@ -141,7 +151,7 @@ const SignSteppers: React.FC = () => {
         const fields = [
             { field_name: 'pricePerShare', prefilled_text: `$${calculateAverage()}` },
         ]
-        const templateId = 'abc1d8bd38c14630a537ba88fd9c7153abc81220';
+        const templateId = 'b0729c3336b2425b93f93458d5df56888d900e54';
         const documentName = `PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
         console.log(fields, templateId, documentName, clientInfo.email);
 
@@ -155,7 +165,6 @@ const SignSteppers: React.FC = () => {
 
     // handle Api Requests
     const securitiesRequest = async (templateId: string, documentName: string, fields: Array<{ field_name: string; prefilled_text: string }>, email: string) => {
-        // try {
         const response = await fetch('/api/signNowAccessTokenApi', {
             method: 'POST',
             headers: {
@@ -169,9 +178,6 @@ const SignSteppers: React.FC = () => {
         }
         const data = await response.json();
         console.log('Template Copied Successfully:', data);
-        // } catch (error) {
-        //     console.error('Error:', error);
-        // }
     };
 
     return (

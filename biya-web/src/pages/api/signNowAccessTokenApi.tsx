@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   if (req.method === 'POST') {
     const tokenUrl = 'https://api.signnow.com/oauth2/token';
-    const credentials = 'YjI3MTYxY2Q4YWNmMGQ5MGFlYjliNDhhZDZhN2I2MjU6OTA5OWI0NDI5MTM5YjZiNDI5YzgxZjJiYTYyODM1Mzc=';
+    const credentials = 'Y2ZlZjhjNmFmZmVkZWIyYjc3YTM0OTc3MDAxNDhmZmE6MmZiNmE3YjFlNDE5MTJhZWUzNDIxMzczZGVlYTAxYTg=';
 
     const { templateId, documentName, fields, email } = req.body;
 
@@ -13,7 +13,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
     }
 
     const tokenBody = new URLSearchParams({
-      username: 'timyao.aehl@gmail.com',
+      username: 'dev@aehltd.com',
       password: 'Aehlbiya7540!',
       grant_type: 'password',
       scope: '*',
@@ -121,7 +121,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
           to: [
             {
               email: `${email}`,
-              role_id: `${roleId2}`,
+              role_id: `${roleId1}`,
               role: "Recipient 1",
               order: "1",
               force_new_signature: "1",
@@ -134,9 +134,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
               message: "Hi, this is an invite to sign a document from BIYA. Please review and sign the document.",
             },
             {
-              email: "timyao.aehl@gmail.com",
-              role_id: `${roleId1}`,
-              role: "AEHL",
+              email: "junyu.yao@aehltd.com",
+              role_id: `${roleId2}`,
+              role: "BIYA",
               order: "2",
               force_new_signature: "1",
               reassign: "0",
