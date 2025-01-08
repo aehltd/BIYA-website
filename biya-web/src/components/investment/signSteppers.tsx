@@ -72,7 +72,7 @@ const SignSteppers: React.FC = () => {
     });
 
     // const [stockPrice, setStockPrice] = React.useState([0, 10, 0, 0, 0]);
-    const [stockPrice] = React.useState([0, 10, 0, 5, 0]);
+    // const [stockPrice, setStockPrice] = React.useState(0);
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
     const [alertMessage, setAlertMessage] = React.useState('');
     const [loading, setLoading] = React.useState(false);
@@ -121,10 +121,16 @@ const SignSteppers: React.FC = () => {
             setLoading(true);
             try {
                 switch (selectedInvestment) {
+                    case InvestmentOptions.F1:
+                        break;
+                    case InvestmentOptions.F3:
+                        break;
+                    case InvestmentOptions.BondIssuance:
+                        break;
                     case InvestmentOptions.PrivateEquity:
+                        calculateAverage(); // Calculate the average price
                         await sendSecuritiesInvitation(); // Wait for the API call to complete
                         break;
-                    // Add other cases if needed
                     default:
                         // Optional: Handle other investments or do nothing
                         console.log("invalid investment option");
@@ -142,8 +148,8 @@ const SignSteppers: React.FC = () => {
 
     // Function to calculate the average price
     const calculateAverage = () => {
-        const total = stockPrice.reduce((acc, price) => acc + price, 0);
-        return (total / stockPrice.length).toFixed(2); // Round to 2 decimal places
+        const averageStockPrice = 3
+        return averageStockPrice;
     };
 
     // Send Invitation
@@ -152,7 +158,7 @@ const SignSteppers: React.FC = () => {
             { field_name: 'pricePerShare', prefilled_text: `$${calculateAverage()}` },
         ]
         const templateId = 'b0729c3336b2425b93f93458d5df56888d900e54';
-        const documentName = `PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
+        const documentName = `SECURITIES PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
         console.log(fields, templateId, documentName, clientInfo.email);
 
         try {
@@ -165,7 +171,7 @@ const SignSteppers: React.FC = () => {
 
     // handle Api Requests
     const securitiesRequest = async (templateId: string, documentName: string, fields: Array<{ field_name: string; prefilled_text: string }>, email: string) => {
-        const response = await fetch('/api/signNowAccessTokenApi', {
+        const response = await fetch('/api/signNowSecuritiesApi', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

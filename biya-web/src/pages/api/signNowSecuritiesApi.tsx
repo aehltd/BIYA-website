@@ -108,58 +108,58 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
 
       // Step 5: Send the document for signing
 
-      const documentSendUrl = `https://api.signnow.com/document/${documentId}/invite`;
+      // const documentSendUrl = `https://api.signnow.com/document/${documentId}/invite`;
 
-      const documentSendResponse = await fetch(documentSendUrl, {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          Authorization: `Bearer ${accessToken}`,
-        },
-        body: JSON.stringify({
-          document_id: `${documentId}`,
-          to: [
-            {
-              email: `${email}`,
-              role_id: `${roleId1}`,
-              role: "Recipient 1",
-              order: "1",
-              force_new_signature: "1",
-              reassign: "0",
-              decline_by_signature: "0",
-              reminder: "0",
-              expiration_days: "30",
-              language: "en",
-              subject: "You’ve got a new signature request",
-              message: "Hi, this is an invite to sign a document from BIYA. Please review and sign the document.",
-            },
-            {
-              email: "junyu.yao@aehltd.com",
-              role_id: `${roleId2}`,
-              role: "BIYA",
-              order: "2",
-              force_new_signature: "1",
-              reassign: "0",
-              decline_by_signature: "0",
-              reminder: "0",
-              expiration_days: "30",
-              language: "en",
-              subject: "You’ve got a new PURCHASE AGREEMENT to sign",
-              message: "Hi, this is an invite to sign a document from BIYA. Please review and sign the document.",
-            }
-          ],
-          from: "timyao.aehl@gmail.com",
-          subject: "TEST!!! BIYA needs your signature",
-          message: "TEST!!! BIYA invited you to sign the PURCHASE AGREEMENT"
-        }),
-      });
+      // const documentSendResponse = await fetch(documentSendUrl, {
+      //   method: 'POST',
+      //   headers: {
+      //     Accept: 'application/json',
+      //     Authorization: `Bearer ${accessToken}`,
+      //   },
+      //   body: JSON.stringify({
+      //     document_id: `${documentId}`,
+      //     to: [
+      //       {
+      //         email: `${email}`,
+      //         role_id: `${roleId1}`,
+      //         role: "Recipient 1",
+      //         order: "1",
+      //         force_new_signature: "1",
+      //         reassign: "0",
+      //         decline_by_signature: "0",
+      //         reminder: "0",
+      //         expiration_days: "30",
+      //         language: "en",
+      //         subject: "You’ve got a new signature request",
+      //         message: "Hi, this is an invite to sign a document from BIYA. Please review and sign the document.",
+      //       },
+      //       {
+      //         email: "junyu.yao@aehltd.com",
+      //         role_id: `${roleId2}`,
+      //         role: "BIYA",
+      //         order: "2",
+      //         force_new_signature: "1",
+      //         reassign: "0",
+      //         decline_by_signature: "0",
+      //         reminder: "0",
+      //         expiration_days: "30",
+      //         language: "en",
+      //         subject: "You’ve got a new PURCHASE AGREEMENT to sign",
+      //         message: "Hi, this is an invite to sign a document from BIYA. Please review and sign the document.",
+      //       }
+      //     ],
+      //     from: "timyao.aehl@gmail.com",
+      //     subject: "TEST!!! BIYA needs your signature",
+      //     message: "TEST!!! BIYA invited you to sign the PURCHASE AGREEMENT"
+      //   }),
+      // });
 
-      if (!documentSendResponse.ok) {
-        throw new Error(`Error fetching document: ${documentSendResponse.status}`);
-      }
+      // if (!documentSendResponse.ok) {
+      //   throw new Error(`Error fetching document: ${documentSendResponse.status}`);
+      // }
 
       // Return the response from the second API call
-      res.status(200).json(documentSendResponse);
+      res.status(200).json(documentFieldsResponse);
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : 'An unexpected error occurred';
       res.status(500).json({ error: errorMessage });
