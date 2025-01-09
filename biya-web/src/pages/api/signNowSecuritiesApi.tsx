@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   if (req.method === 'POST') {
     const tokenUrl = 'https://api.signnow.com/oauth2/token';
-    const credentials = 'Y2ZlZjhjNmFmZmVkZWIyYjc3YTM0OTc3MDAxNDhmZmE6MmZiNmE3YjFlNDE5MTJhZWUzNDIxMzczZGVlYTAxYTg=';
+    const credentials = 'YjUxYzZhNDExNjk4ZTFiYzZiNmEzOWMxM2M5NWQ1ZTI6MDRjNTM0NWJiZWEzNmI5Njk1MmYzYjdhYWJiZWNlM2Q=';
 
     const { templateId, documentName, fields, email } = req.body;
 

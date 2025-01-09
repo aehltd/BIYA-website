@@ -71,6 +71,15 @@ const SignSteppers: React.FC = () => {
         email: '',
     });
 
+    type StockData = {
+        t: number; // Timestamp
+        o: number; // Open price
+        h: number; // High price
+        l: number; // Low price
+        c: number; // Close price
+        v: number; // Volume
+    };
+
     // const [stockPrice, setStockPrice] = React.useState([0, 10, 0, 0, 0]);
     // const [stockPrice, setStockPrice] = React.useState(0);
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
@@ -128,7 +137,6 @@ const SignSteppers: React.FC = () => {
                     case InvestmentOptions.BondIssuance:
                         break;
                     case InvestmentOptions.PrivateEquity:
-                        calculateAverage(); // Calculate the average price
                         await sendSecuritiesInvitation(); // Wait for the API call to complete
                         break;
                     default:
@@ -147,15 +155,46 @@ const SignSteppers: React.FC = () => {
     }
 
     // Function to calculate the average price
-    const calculateAverage = () => {
-        const averageStockPrice = 3
-        return averageStockPrice;
+    // const calculateAverage = () => {
+    //     const averageStockPrice = 3
+    //     return averageStockPrice;
+    // };
+
+    const fetchStockDataAndCalculateAverage = async (): Promise<number> => {
+        const apiKey = 'cab7cb3fb37b44149fee2fca93714124qv'; // Replace with your API key if necessary
+        const ticker = 'AAPL'; // Apple Inc. stock ticker
+        const url = `https://api.finazon.io/latest/finazon/us_stocks_essential/time_series?ticker=${ticker}&interval=1d&page=0&page_size=5&adjust=all&apikey=${apiKey}`;
+
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            if (Array.isArray(data.data)) {
+                const stockData: StockData[] = data.data;
+
+                // Calculate the average Close price
+                const totalClosePrice = stockData.reduce((sum, item) => sum + item.c, 0);
+                const averageClosePrice = totalClosePrice / stockData.length;
+
+                return parseFloat(averageClosePrice.toFixed(2)); // Return as a number
+            } else {
+                throw new Error('Unexpected response structure');
+            }
+        } catch (error) {
+            throw new Error(`Error fetching stock data: ${error instanceof Error ? error.message : String(error)}`);
+        }
     };
 
     // Send Invitation
     const sendSecuritiesInvitation = async () => {
+        const averageClosePrice = await fetchStockDataAndCalculateAverage();
+
         const fields = [
-            { field_name: 'pricePerShare', prefilled_text: `$${calculateAverage()}` },
+            { field_name: 'pricePerShare', prefilled_text: `$${averageClosePrice}` },
         ]
         const templateId = 'b0729c3336b2425b93f93458d5df56888d900e54';
         const documentName = `SECURITIES PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
