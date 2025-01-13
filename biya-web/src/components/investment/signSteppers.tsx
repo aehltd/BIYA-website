@@ -131,10 +131,13 @@ const SignSteppers: React.FC = () => {
             try {
                 switch (selectedInvestment) {
                     case InvestmentOptions.F1:
+                        console.log('F1 Api Call');
                         break;
                     case InvestmentOptions.F3:
+                        console.log('F3 Api Call');
                         break;
                     case InvestmentOptions.BondIssuance:
+                        console.log('BondIssuance Api Call');
                         break;
                     case InvestmentOptions.PrivateEquity:
                         await sendSecuritiesInvitation(); // Wait for the API call to complete
@@ -154,12 +157,7 @@ const SignSteppers: React.FC = () => {
         }
     }
 
-    // Function to calculate the average price
-    // const calculateAverage = () => {
-    //     const averageStockPrice = 3
-    //     return averageStockPrice;
-    // };
-
+    // Fetch stock data and calculate the average Close price
     const fetchStockDataAndCalculateAverage = async (): Promise<number> => {
         const apiKey = 'cab7cb3fb37b44149fee2fca93714124qv'; // Replace with your API key if necessary
         const ticker = 'AAPL'; // Apple Inc. stock ticker
@@ -178,7 +176,7 @@ const SignSteppers: React.FC = () => {
 
                 // Calculate the average Close price
                 const totalClosePrice = stockData.reduce((sum, item) => sum + item.c, 0);
-                const averageClosePrice = totalClosePrice / stockData.length;
+                const averageClosePrice = (totalClosePrice / stockData.length) * 0.8;
 
                 return parseFloat(averageClosePrice.toFixed(2)); // Return as a number
             } else {
@@ -189,15 +187,15 @@ const SignSteppers: React.FC = () => {
         }
     };
 
-    // Send Invitation
+    // Send Gen Doc Request Info
     const sendSecuritiesInvitation = async () => {
         const averageClosePrice = await fetchStockDataAndCalculateAverage();
 
         const fields = [
             { field_name: 'pricePerShare', prefilled_text: `$${averageClosePrice}` },
         ]
-        const templateId = 'b0729c3336b2425b93f93458d5df56888d900e54';
-        const documentName = `SECURITIES PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName}`;
+        const templateId = '8ce4be0eb5cb464585101cde7889d57a43fcf033';
+        const documentName = `BIYA SECURITIES PURCHASE AGREEMENT - ${clientInfo.firstName} ${clientInfo.lastName} - ${selectedBank}`;
         console.log(fields, templateId, documentName, clientInfo.email);
 
         try {
@@ -208,7 +206,7 @@ const SignSteppers: React.FC = () => {
         }
     }
 
-    // handle Api Requests
+    // handle securitiesRequest Api Requests
     const securitiesRequest = async (templateId: string, documentName: string, fields: Array<{ field_name: string; prefilled_text: string }>, email: string) => {
         const response = await fetch('/api/signNowSecuritiesApi', {
             method: 'POST',
@@ -390,10 +388,10 @@ const SignSteppers: React.FC = () => {
             </Stepper>
             {activeStep === steps.length && (
                 <Paper square elevation={0} sx={{ p: 3 }} className='bg-white-linen-100'>
-                    <Typography>All steps completed - you&apos;re finished</Typography>
+                    {/* <Typography>All steps completed - you&apos;re finished</Typography> */}
                     <Alert severity="success">
                         <AlertTitle>Success</AlertTitle>
-                        All steps completed - you&apos;re finished. <br />
+                        All steps completed - You&apos;re finished. <br />
                         Please check your email for the agreement.
                     </Alert>
                     <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
