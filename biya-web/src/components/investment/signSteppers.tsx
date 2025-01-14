@@ -160,7 +160,7 @@ const SignSteppers: React.FC = () => {
     // Fetch stock data and calculate the average Close price
     const fetchStockDataAndCalculateAverage = async (): Promise<number> => {
         const apiKey = 'cab7cb3fb37b44149fee2fca93714124qv'; // Replace with your API key if necessary
-        const ticker = 'AAPL'; // Apple Inc. stock ticker
+        const ticker = 'AEHL'; // Apple Inc. stock ticker
         const url = `https://api.finazon.io/latest/finazon/us_stocks_essential/time_series?ticker=${ticker}&interval=1d&page=0&page_size=5&adjust=all&apikey=${apiKey}`;
 
         try {
