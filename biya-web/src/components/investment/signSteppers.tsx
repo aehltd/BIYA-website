@@ -80,8 +80,6 @@ const SignSteppers: React.FC = () => {
         v: number; // Volume
     };
 
-    // const [stockPrice, setStockPrice] = React.useState([0, 10, 0, 0, 0]);
-    // const [stockPrice, setStockPrice] = React.useState(0);
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
     const [alertMessage, setAlertMessage] = React.useState('');
     const [loading, setLoading] = React.useState(false);
@@ -132,6 +130,7 @@ const SignSteppers: React.FC = () => {
                 switch (selectedInvestment) {
                     case InvestmentOptions.F1:
                         console.log('F1 Api Call');
+                        await sendFormF1Request(); // Wait for the API call to complete
                         break;
                     case InvestmentOptions.F3:
                         console.log('F3 Api Call');
@@ -187,6 +186,37 @@ const SignSteppers: React.FC = () => {
         }
     };
 
+    // Send Form F1 Request Info
+    const sendFormF1Request = async () => {
+        const templateId = '7aee40834898468ab108acf393909ac8f996df8a';
+        const documentName = `BIYA FORM F-1 - ${clientInfo.firstName} ${clientInfo.lastName} - ${selectedBank}`;
+        console.log(templateId, documentName, clientInfo.email);
+
+        try {
+            await formF1Request(templateId, documentName, clientInfo.email);
+            setIsAlertVisible(false); // Hide the alert on success
+        } catch (error) {
+            throw new Error('Failed to send Form F1 request');
+        }
+    }
+
+    // Handle formF1Request Api Requests
+    const formF1Request = async (templateId: string, documentName: string, email: string) => {
+        const response = await fetch('/api/signNowF1Api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ templateId, documentName, email }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Form F1 Request Successfully:', data);
+    };
+
     // Send Gen Doc Request Info
     const sendSecuritiesInvitation = async () => {
         const averageClosePrice = await fetchStockDataAndCalculateAverage();
@@ -220,7 +250,7 @@ const SignSteppers: React.FC = () => {
             throw new Error(`Error: ${response.status}`);
         }
         const data = await response.json();
-        console.log('Template Copied Successfully:', data);
+        console.log('Securities Request Successfully:', data);
     };
 
     return (

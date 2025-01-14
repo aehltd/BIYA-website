@@ -5,7 +5,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
     const tokenUrl = 'https://api.signnow.com/oauth2/token';
     const credentials = 'YjUxYzZhNDExNjk4ZTFiYzZiNmEzOWMxM2M5NWQ1ZTI6MDRjNTM0NWJiZWEzNmI5Njk1MmYzYjdhYWJiZWNlM2Q=';
 
-    const { templateId, documentName, fields, email } = req.body;
+    const { templateId, documentName, email } = req.body;
 
     if (!templateId || !documentName) {
       res.status(400).json({ error: 'Missing required parameters: templateId or documentName' });
@@ -82,30 +82,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
       const roleId1 = documentData.roles[0].id;
       const roleId2 = documentData.roles[1].id;
 
-      // Step 4: Edit the stock price in the document
-
-      const documentFieldsUrl = `https://api.signnow.com/v2/documents/${documentId}/prefill-texts`;
-
-      const documentFieldsResponse = await fetch(documentFieldsUrl, {
-        method: 'PUT',
-        headers: {
-          Accept: 'application/json',
-          Authorization: `Bearer ${accessToken}`,
-        },
-        body: JSON.stringify({
-          fields: [
-            {
-              field_name: "pricePerShare",
-              prefilled_text: `${fields[0].prefilled_text}`,
-            },
-          ],
-        }),
-      });
-
-      if (!documentFieldsResponse.ok) {
-        throw new Error(`Error fetching document: ${documentFieldsResponse.status}`);
-      }
-
       // Step 5: Send the document for signing
 
       const documentSendUrl = `https://api.signnow.com/document/${documentId}/invite`;
@@ -133,7 +109,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
               },
               expiration_days: "14",
               language: "en",
-              subject: "New Signature Request: SECURITIES PURCHASE AGREEMENT from BIYA",
+              subject: "New Signature Request: F1 PURCHASE AGREEMENT from BIYA",
               message: "Hello, You have been invited to review and sign a document from BIYA. Please take a moment to review and complete the signature process. Thank you.",
             },
             {
@@ -147,13 +123,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
               reminder: "0",
               expiration_days: "30",
               language: "en",
-              subject: "You’ve got a new SECURITIES PURCHASE AGREEMENT to sign",
+              subject: "You’ve got a new F1 PURCHASE AGREEMENT to sign",
               message: "Hi, this is an invite to sign a document from BIYA. Please review and sign the document.",
             }
           ],
           from: "timyao.aehl@gmail.com",
           subject: "BIYA needs your signature",
-          message: "BIYA invited you to sign the PURCHASE AGREEMENT"
+          message: "BIYA invited you to sign the F1 PURCHASE AGREEMENT"
         }),
       });
 
@@ -162,7 +138,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse): Promise<void>
       }
 
       // Return the response from the second API call
-      res.status(200).json(documentFieldsResponse);
+      res.status(200).json(documentSendResponse);
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : 'An unexpected error occurred';
       res.status(500).json({ error: errorMessage });
