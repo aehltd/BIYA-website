@@ -130,13 +130,33 @@ const SignSteppers: React.FC = () => {
                 switch (selectedInvestment) {
                     case InvestmentOptions.F1:
                         console.log('F1 Api Call');
-                        await sendFormF1Request(); // Wait for the API call to complete
+                        const templateF1 = '7aee40834898468ab108acf393909ac8f996df8a';
+                        const documentNameF1 = `BIYA FORM F-1 - ${clientInfo.firstName} ${clientInfo.lastName} - ${selectedBank}`;
+                        // Wait for the API call to complete
+                        await sendFormDocRequest(
+                            templateF1,
+                            documentNameF1
+                        ); 
                         break;
                     case InvestmentOptions.F3:
                         console.log('F3 Api Call');
+                        const templateF3 = '1bf8c287677a4c2ca0d70818e2970f33e5d457ad';
+                        const documentNameF3 = `BIYA FORM F-3 - ${clientInfo.firstName} ${clientInfo.lastName} - ${selectedBank}`;
+                        // Wait for the API call to complete
+                        await sendFormDocRequest(
+                            templateF3,
+                            documentNameF3
+                        ); 
                         break;
                     case InvestmentOptions.BondIssuance:
                         console.log('BondIssuance Api Call');
+                        const templateNote = '1a3e3225e78747bd85570de0bc8c86b9c2755ef4';
+                        const documentNameNote = `BIYA Note Purchase Agreement - ${clientInfo.firstName} ${clientInfo.lastName} - ${selectedBank}`;
+                        // Wait for the API call to complete
+                        await sendFormDocRequest(
+                            templateNote,
+                            documentNameNote
+                        ); 
                         break;
                     case InvestmentOptions.PrivateEquity:
                         await sendSecuritiesInvitation(); // Wait for the API call to complete
@@ -186,23 +206,20 @@ const SignSteppers: React.FC = () => {
         }
     };
 
-    // Send Form F1 Request Info
-    const sendFormF1Request = async () => {
-        const templateId = '7aee40834898468ab108acf393909ac8f996df8a';
-        const documentName = `BIYA FORM F-1 - ${clientInfo.firstName} ${clientInfo.lastName} - ${selectedBank}`;
-        console.log(templateId, documentName, clientInfo.email);
+    // Send Doc
+    const sendFormDocRequest = async (templateId: string, documentName: string) => {
 
         try {
-            await formF1Request(templateId, documentName, clientInfo.email);
+            await formDocRequest(templateId, documentName, clientInfo.email);
             setIsAlertVisible(false); // Hide the alert on success
         } catch (error) {
             throw new Error('Failed to send Form F1 request');
         }
     }
 
-    // Handle formF1Request Api Requests
-    const formF1Request = async (templateId: string, documentName: string, email: string) => {
-        const response = await fetch('/api/signNowF1Api', {
+    // Handle formDocRequest Api Requests
+    const formDocRequest = async (templateId: string, documentName: string, email: string) => {
+        const response = await fetch('/api/signNowDocApi', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
