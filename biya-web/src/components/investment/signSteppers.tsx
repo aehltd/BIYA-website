@@ -119,6 +119,15 @@ const SignSteppers: React.FC = () => {
         }));
     };
 
+    const handleResultChange = (index: number, field: string, value: any) => {
+        setResults((prevResults) => {
+            const updatedResults = [...prevResults];
+            updatedResults[index] = { ...updatedResults[index], [field]: value };
+            return updatedResults;
+        });
+    };
+    
+
     // Handle Request Agreement, and check if all fields are filled
     const handleRequestAgreement = async () => {
         if (!clientInfo.firstName || !clientInfo.lastName || !clientInfo.email) {
