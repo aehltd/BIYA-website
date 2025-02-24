@@ -25,7 +25,7 @@ export default function Newsroom() {
     yearSelectNumYears: 2,
     yearSelected: 0,
     datePickerFormat: "Y-m-d",
-    symbol: "AEHL",
+    symbol: "BIYA",
   };
   return (
     <div className="container pt-[60px]">
