@@ -6,9 +6,9 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import IrPageBanner from "../../components/banner/irPageBanner";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
+// import Divider from "@mui/material/Divider";
 
-import Image from "next/image";
+// import Image from "next/image";
 
 import ManagementTeam from "@/components/investors/managementTeam";
 import BoardOfDirectors from "../../components/investors/board2"
