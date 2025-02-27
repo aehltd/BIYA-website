@@ -11,15 +11,15 @@ export default function Ir() {
       </Typography>
       <div>
         <Typography variant="h4" className="tracking-wide">
-          Tina Xiao
+        Tina Xiao
         </Typography>
         <Typography variant="body1" className="py-0">
           Ascent Investor Relations LLC
         </Typography>
         <Typography variant="h6">Phone:</Typography>
-        <Typography variant="h6">+1 (917)-609-0333</Typography>
+        <Typography variant="h6">+1 (646)-932-7242</Typography>
         <Typography variant="h6">Email:</Typography>
-        <Typography variant="h6">tina.xiao@ascent-ir.com</Typography>
+        <Typography variant="h6">investors@ascent-ir.com</Typography>
       </div>
     </div>
   );
