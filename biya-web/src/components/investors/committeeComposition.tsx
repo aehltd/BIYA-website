@@ -30,22 +30,23 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 function createData(
     name: string,
-    position: string,
+    // position: string,
     audit: string,
     compensation: string,
     nominating: string,
 ) {
-    return { name, position, audit, compensation, nominating };
+    // return { name, position, audit, compensation, nominating };
+    return { name, audit, compensation, nominating };
 }
 
 const rows = [
-    createData('Weilai Zhang', "Chairman Appointee", "", "", ""),
-    createData('Siyu Yang', "Chairman Appointee", "", "", ""),
-    createData('Bin Tan', "Chairman Appointee", "", "", ""),
-    createData('Dian Zhang', "Chairman Appointee", "", "", ""),
-    createData('Huashu Yuan', "Chairman Appointee", "M", "M", "C"),
-    createData('Zicen Liao', "Chairman Appointee", "C", "M", "M"),
-    createData('Xiaoyue Zhang', "Chairman Appointee", "M", "C", "M"),
+    // createData('Weilai Zhang', "", "", ""),
+    // createData('Siyu Yang', "", "", ""),
+    // createData('Bin Tan', "", "", ""),
+    // createData('Dian Zhang', "", "", ""),
+    createData('Zicen Liao', "(1) (2) (3)", "(1)", "(1)"),
+    createData('Xiaoyue Zhang', "(1) ", "(1) (2)", "(1) "),
+    createData('Huashu Yuan', "(1) ", "(1) ", "(1) (2)"),
 ];
 
 const CommitteeComposition: React.FC = () => {
@@ -53,17 +54,19 @@ const CommitteeComposition: React.FC = () => {
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 700 }} aria-label="customized table">
                 <caption>
-                    C - Chairman
+                    (1) Committee member
                     <br />
-                    M - Member
+                    (2) Committee chairperson
+                    <br />
+                    (3) Audit committee financial expert
                 </caption>
                 <TableHead>
                     <TableRow>
                         <StyledTableCell>Director</StyledTableCell>
-                        <StyledTableCell align="right">Position</StyledTableCell>
+                        {/* <StyledTableCell align="right">Position</StyledTableCell> */}
                         <StyledTableCell align="right">Audit Committee</StyledTableCell>
                         <StyledTableCell align="right">Compensation Committee</StyledTableCell>
-                        <StyledTableCell align="right">Nominating Committee</StyledTableCell>
+                        <StyledTableCell align="right">Nominating and Corporate Governance Committee</StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -72,7 +75,7 @@ const CommitteeComposition: React.FC = () => {
                             <StyledTableCell component="th" scope="row">
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">{row.position}</StyledTableCell>
+                            {/* <StyledTableCell align="right">{row.position}</StyledTableCell> */}
                             <StyledTableCell align="right">{row.audit}</StyledTableCell>
                             <StyledTableCell align="right">{row.compensation}</StyledTableCell>
                             <StyledTableCell align="right">{row.nominating}</StyledTableCell>

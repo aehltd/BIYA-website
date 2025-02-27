@@ -36,7 +36,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question: "Who is Baiya's investor relations firm?",
-    answer: "Ascent Investor Relations Inc (AIR), 733 3rd Avenue, 16th Floor, New York, NY 10017. To contact email info@ascent-ir.com.",
+    answer: "Ascent Investor Relations LLC, 733 3rd Avenue, 16th Floor, New York, NY 10017. To contact, please call +1-646-932-7242 or email investors@ascent-ir.com.",
   },
   {
     question: "Who is Baiya's transfer agent?",

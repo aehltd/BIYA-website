@@ -39,7 +39,7 @@ const boardDiversityMatrix = [
     createBoardDiversityMatrix('Country of Principal Executive Officers', "China"),
     createBoardDiversityMatrix('Foreign Private Issuer', "Yes"),
     createBoardDiversityMatrix('Disclosure Prohibited Under Home Country Law', "No"),
-    createBoardDiversityMatrix('Number of Directors', "7"),
+    createBoardDiversityMatrix('Number of Directors', "5"),
 ];
 
 function createGenderIdentity(
@@ -53,7 +53,7 @@ function createGenderIdentity(
 }
 
 const genderIdentity = [
-    createGenderIdentity('Country of Principal Executive Officers', 4, 3, 0, 0),
+    createGenderIdentity('#', 4, 1, 0, 0),
 ];
 
 function createDemographicBackground(

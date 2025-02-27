@@ -10,6 +10,7 @@ import Divider from "@mui/material/Divider";
 
 import Image from "next/image";
 
+import ManagementTeam from "@/components/investors/managementTeam";
 import BoardOfDirectors from "../../components/investors/board2"
 import CommitteeComposition from "@/components/investors/committeeComposition";
 import DiversityMatrix from "@/components/investors/diversityMatrix";
@@ -30,19 +31,23 @@ export default function Corporate() {
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="Board of Directors" value="1" />
-              <Tab label="Documents" value="2" />
-              <Tab label="Committee Composition" value="3" />
-              <Tab label="Diversity Matrix" value="4" />
+              <Tab label="Management Team" value="1" />
+              <Tab label="Board of Directors" value="2" />
+              <Tab label="Documents" value="3" />
+              <Tab label="Committee Composition" value="4" />
+              <Tab label="Diversity Matrix" value="5" />
             </TabList>
           </Box>
           <TabPanel value="1">
+            <ManagementTeam />
+          </TabPanel>
+          <TabPanel value="2">
             {" "}
             <Typography>Board of Directors</Typography>
             <div className="py-5">
               <BoardOfDirectors />
             </div>
-            <Divider />
+            {/* <Divider />
             <div className="py-3">
               <Image
                 src="https://res.cloudinary.com/aehl/image/upload/v1726250854/table_r5jtij.png"
@@ -50,11 +55,11 @@ export default function Corporate() {
                 height={500}
                 alt="Table of Board of Directors"
               />
-            </div>
+            </div> */}
           </TabPanel>
-          <TabPanel value="2"><DocumentsTable/></TabPanel>
-          <TabPanel value="3"><CommitteeComposition/></TabPanel>
-          <TabPanel value="4"><DiversityMatrix/></TabPanel>
+          <TabPanel value="3"><DocumentsTable /></TabPanel>
+          <TabPanel value="4"><CommitteeComposition /></TabPanel>
+          <TabPanel value="5"><DiversityMatrix /></TabPanel>
         </TabContext>
       </Box>
     </div>

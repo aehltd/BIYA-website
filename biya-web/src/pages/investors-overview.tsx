@@ -37,22 +37,14 @@ export default function About() {
           </Grid>
           <Grid size={12}>
             <Typography variant="body1" gutterBottom>
-              Baiya International Group Inc. (“Baiya”, or the “Company”) was
-              incorporated on October 18, 2021, under the laws of the Cayman
-              Islands with limited liability. As a holding company with no
-              material operations of its own, Baiya conducts all of the
-              operations in mainland China of People’s Republic of China (“PRC”
-              or “China”) through the contractual arrangements (the “Contractual
-              Arrangements”), with Shenzhen Gongwuyuan Network Technology Co.,
-              Ltd. (“Gongwuyuan”), which is a variable interest entity (the
-              “VIE”), and its subsidiaries, or collectively, “PRC operating
-              entities”. The PRC operating entities mainly engaged in providing
-              job matching service, entrusted recruitment service, project
-              outsourcing service and labor dispatching service to business
-              enterprises and organizations in the flexible employment market
-              within China, primarily in the core manufacturing regions
-              including the Pearl River Delta and Yangtze River Delta region.
-              Baiya International Group Inc.
+              We are a leading human resource (“HR”) technology company utilizing our cloud-based internet platform, Gongwuyuan Platform, to provide one-stop crowdsourcing recruitment and SaaS-enabled HR solutions in China’s flexible employment marketplace.
+              <br />
+              <br />
+              We offer four core services—job matching, entrusted recruitment, project outsourcing, and labor dispatching, primarily in the core manufacturing regions of China.
+              <br />
+              <br />
+              Launched in November 2019, our Gongwuyuan Platform features innovative tools designed to enhance user experience, optimize job referrals, and improve HR-related services, complemented by our offline flexible employment matching services.
+
             </Typography>
           </Grid>
           <Grid size={12}>
