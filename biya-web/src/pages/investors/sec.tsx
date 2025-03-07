@@ -2,7 +2,7 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 
 import QMod from "@/components/QMod";
 import QModFooter from "@/components/QModFooter";
-import ComingSoon from "@/components/upComing";
+// import ComingSoon from "@/components/upComing";
 
 export default function SEC() {
   const params = {
@@ -29,7 +29,7 @@ export default function SEC() {
   return (
     <div id="container" className="container pt-[60px]">
       <IrPageBanner title="SEC Filings" />
-      <ComingSoon/>
+      {/* <ComingSoon/> */}
       <div className="">
         <QMod tool="filings" params={JSON.stringify(params)} datatracked />
       </div>

@@ -2,7 +2,7 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 import QModFooter from "@/components/QModFooter";
 import QMod from "@/components/QMod";
 
-import ComingSoon from "@/components/upComing";
+// import ComingSoon from "@/components/upComing";
 
 export default function Stock() {
   const detailedQuoteTabChartParams = {
@@ -32,7 +32,7 @@ export default function Stock() {
   return (
     <div className="container pt-[60px]">
       <IrPageBanner title="Stock" />
-      <ComingSoon />
+      {/* <ComingSoon /> */}
       <div className="">
         <QMod tool="detailedquotetabchart" params={JSON.stringify(detailedQuoteTabChartParams)} datatracked />
       </div>
