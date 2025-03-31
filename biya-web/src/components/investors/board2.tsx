@@ -16,9 +16,9 @@ const board: BoardEntry[] = [
   {
     name: "Weilai Zhang",
     position: "Chairman Appointee, Director",
-    description: ` - Mr. Zhang has been our director since August 2022 and will be appointed as the Chairman of our Board upon the effectiveness of this prospectus. 
-    - Mr. Zhang is responsible for our overall strategic planning. 
-    - Mr. Zhang has extensive experience in business management and marketing, has incubated a series of fast-growing financial technology companies, and successfully invested in many start-up companies.`,
+    description: `- Mr. Zhang has served as our Chairman of the Board since March 2025 and has been our director since August 2022.
+    - Mr. Zhang is responsible for our overall strategic planning.
+    - Mr. Zhang has extensive experience in business management and marketing, has incubated a series of fast-growing financial technology companies, and successfully invested in many start-up companies.`,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1726250854/Weilai_Zhang_ltfocj.png",
     linkedin: "https://www.linkedin.com/in/aehl/",
@@ -35,37 +35,26 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
     linkedin: "",
   },
-//   {
-//     name: "Bin Tan",
-//     position: "COO",
-//     description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
-// - Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd since October 2021.
-// - Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
-// - Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
-// - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.
-// `,
-//     image:
-//       "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
-//     linkedin: "",
-//   },
-//   {
-//     name: "Dian Zhang",
-//     position: "CFO",
-//     description: `- Mr. Zhang has served as our Chief Financial Officer since June 2022. 
-// - Mr. Zhang worked as a headquarter analyst at Eaton Square M&A Advisory Firm in Australia from 2014 to 2020. 
-// - Mr. Zhang worked as an auditor at ShineWing Certified Public Accountants from 2009 to 2013. 
-// - Mr. Zhang holds a Bachelor Degree of Management Accounting from Aston University, a Master Degree of Banking and Finance from Monash University, and a Master Degree of Financial Management from the Australian National University. In addition, Mr. Zhang is a fellow member of the Association of Chartered Certified Accountants in the United Kingdom.
-// `,
-//     image:
-//       "https://res.cloudinary.com/aehl/image/upload/v1726250851/Dian_Zhang_btf9ui.png",
-//     linkedin: "",
-//   },
+  //   {
+  //     name: "Bin Tan",
+  //     position: "COO",
+  //     description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
+  // - Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd since October 2021.
+  // - Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
+  // - Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
+  // - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.
+  // `,
+  //     image:
+  //       "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
+  //     linkedin: "",
+  //   }
   {
     name: "Huashu Yuan",
     position:
       "Chair of Nominating and Corporate Governance Committee, Director",
-    description: `- Ms. Yuan has extensive professional knowledge in the media field, as well as a solid foundation of business practice experience and professional skills. 
-      - Ms. Yuan, as the social media specialist, worked for WG Empire in New York. 
+    description: `- Ms. Yuan has served as our Independent Director since March 2025.
+      - Ms. Yuan has extensive professional knowledge in the media field, as well as a solid foundation of business practice experience and professional skills.
+      - Ms. Yuan, as the social media specialist, worked for WG Empire in New York.
       - Ms. Yuan received a Bachelor’s Degree in Communication and Rhetoric Studies at University of Wisconsin-Madison, and a Master Degree of Emerging Media Studies at Boston University.
       `,
     image:
@@ -75,11 +64,12 @@ const board: BoardEntry[] = [
   {
     name: "Zicen Liao",
     position: "Chair of Audit Committee, Director",
-    description: `- Ms. Liao is a professional investment manager with over 5 years of experience in conducting industry, market and company-specific research and financial due diligence, with a focus on start-up and growth companies. 
-- Ms. Liao is currently an investment manager in the M&A Department of Antelope Enterprise Holdings Limited (NASDAQ: AEHL) since 2021. 
-- Ms. Liao was previously a project manager in Transaction Advisory Services at Grant Thornton Advisory (Beijing Office, China) from 2016 to 2020, with over 3.5 years of experience in conducting financial due diligence. 
-- Ms. Liao holds two Bachelor degrees in Mathematics and Finance from Indiana University Bloomington, Indiana State, USA.
-`,
+    description: `- Ms. Liao has served as our Independent Director since March 2025.
+    - Ms. Liao is a professional investment manager with over 5 years of experience in conducting industry, market and company-specific research and financial due diligence, with a focus on start-up and growth companies.
+    - Ms. Liao is currently an investment manager in the M&amp;A Department of Antelope Enterprise Holdings Limited (NASDAQ: AEHL) since 2021.
+    - Ms. Liao was previously a project manager in Transaction Advisory Services at Grant Thornton Advisory (Beijing Office, China) from 2016 to 2020, with over 3.5 years of experience in conducting financial due diligence.
+    - Ms. Liao holds two Bachelor degrees in Mathematics and Finance from Indiana University Bloomington, Indiana State, USA.
+    `,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1726250850/Zicen_Liao_lev4zy.png",
     linkedin: "",
@@ -87,11 +77,12 @@ const board: BoardEntry[] = [
   {
     name: "Xiaoyue Zhang",
     position: "Chair of Compensation Committee, Director",
-    description: `- Ms. Zhang has been an investment manager with Antelope Enterprise Holdings Ltd. since May 2021. 
-- Ms. Zhang served as a securities affairs representative with Hiseas International Tourism Group from 2019 to 2021.  
-- Ms. Zhang was previously an auditor with BDO China Shu Lun Pan Certified Public Accountants LLP from 2018 to 2019. 
-- Ms. Zhang received a Bachelor of Accounting from University of Adelaide.
-`,
+    description: `- Ms. Zhang has served as our Independent Director since March 2025.
+    - Ms. Zhang has been an investment manager with Antelope Enterprise Holdings Ltd. since May 2021.
+    - Ms. Zhang served as a securities affairs representative with Hiseas International Tourism Group from 2019 to 2021.
+    - Ms. Zhang was previously an auditor with BDO China Shu Lun Pan Certified Public Accountants LLP from 2018 to 2019.
+    - Ms. Zhang received a Bachelor of Accounting from University of Adelaide.
+    `,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1726250852/Xiaoyue_Zhang_zmrhke.png",
     linkedin: "",

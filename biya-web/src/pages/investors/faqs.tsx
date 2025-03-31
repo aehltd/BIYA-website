@@ -40,7 +40,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question: "Who is Baiya's transfer agent?",
-    answer: "Transhare Corporation, Bayside Center, 17755 US Highway 19 N Suite 140, Clearwater, FL, 33764. To contact, call (303) 662-1112 or email info@transhare.com.",
+    answer: "Transhare Corporation, Bayside Center 1., 17755 US Hwy 19 N Suite 140, Clearwater, FL 33764. To contact, call (303) 662-1112 or email info@transhare.com.",
   },
   {
     question: "Who is Baiya’s legal counsel?",
