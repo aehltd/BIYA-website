@@ -25,11 +25,11 @@ export default function NotFound() {
               <Typography variant="h6">Address:</Typography>
 
               <Typography variant="body1">
-                1460 Broadway New York, NY 10036 USA
+                Suite 7540, The Empire State Building, 350 Fifth Ave, New York, New York, 10118
               </Typography>
               <br />
               <Typography variant="h6">Phone:</Typography>
-              <Typography variant="body1">+86 0769-88785888</Typography>
+              <Typography variant="body1">+1 (838) 900 - 8888</Typography>
               <br />
               <Typography variant="h6">Email:</Typography>
               <Typography variant="body1">weilaizhang@baiyainc.com</Typography>
