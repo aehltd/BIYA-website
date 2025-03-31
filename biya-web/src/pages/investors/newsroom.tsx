@@ -2,7 +2,6 @@ import IrPageBanner from "../../components/banner/irPageBanner";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
-// import ComingSoon from "@/components/upComing";
 import QModFooter from "@/components/QModFooter";
 import QMod from "@/components/QMod";
 
@@ -40,7 +39,7 @@ export default function Newsroom() {
           Press Releases
         </Typography>
         <Divider />
-        {/* <ComingSoon/> */}
+        
         <div>
           <div>
             <QMod
