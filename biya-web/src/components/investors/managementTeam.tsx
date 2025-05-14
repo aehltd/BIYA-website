@@ -24,18 +24,18 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
     linkedin: "",
   },
-  {
-    name: "Bin Tan",
-    position: "Chief Operating Officer",
-    description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
-- Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd. since October 2021. 
-- Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
-- Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
-- Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.`,
-    image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
-    linkedin: "",
-  },
+//   {
+//     name: "Bin Tan",
+//     position: "Chief Operating Officer",
+//     description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
+// - Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd. since October 2021. 
+// - Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
+// - Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
+// - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.`,
+//     image:
+//       "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
+//     linkedin: "",
+//   },
   {
     name: "Dian Zhang",
     position: "Chief Financial Officer",
