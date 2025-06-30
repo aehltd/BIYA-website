@@ -24,30 +24,32 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
     linkedin: "",
   },
-//   {
-//     name: "Bin Tan",
-//     position: "Chief Operating Officer",
-//     description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
-// - Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd. since October 2021. 
-// - Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
-// - Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
-// - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.`,
-//     image:
-//       "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
-//     linkedin: "",
-//   },
-  {
-    name: "Dian Zhang",
+    {
+    name: "Dan Bin",
     position: "Chief Financial Officer",
-    description: `- Mr. Zhang has served as our Chief Financial Officer since June 2022. 
-- Mr. Zhang worked as a headquarter analyst at Eaton Square M&A Advisory Firm in Australia from 2014 to 2020. 
-- Mr. Zhang worked as an auditor at ShineWing Certified Public Accountants from 2009 to 2013. 
-- Mr. Zhang holds a Bachelor Degree of Management Accounting from Aston University, a Master Degree of Banking and Finance from Monash University, and a Master Degree of Financial Management from the Australian National University. In addition, Mr. Zhang is a fellow member of the Association of Chartered Certified Accountants in the United Kingdom.
+    description: `is a seasoned finance professional with over 12 years of experience in corporate financial management across the manufacturing and technology sectors. 
+    Since March 2023, she has been serving as the Finance Director of Chengdu Jinkeyulu Technology Co., Ltd. 
+    In this position, she leads strategic planning, internal controls, budgeting, and financial risk management. 
+    From September 2019 to December 2022, Ms. Bin served as the Finance Manager at Chongqing Jinzhima Machinery Manufacturing Co., Ltd., where she developed a five-year finance strategy, optimized cost structures, and supported business expansion. 
+    From October 2014 to August 2019, she held financial leadership roles at Chongqing Tianxin Consulting Services Co., Ltd., and from March 2013 to January 2014, she worked at Chengdu Mingqing Machinery Co., Ltd. as a Finance Supervisor. 
+    Ms. Bin holds a bachelor’s degree in Accounting Information Systems from Sichuan Normal University and a master’s degree in Software Engineering from the University of Electronic Science and Technology of China.
 `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250851/Dian_Zhang_btf9ui.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1751294329/1_xcgd5r.png",
     linkedin: "",
   },
+//   {
+//     name: "Dian Zhang",
+//     position: "Chief Financial Officer",
+//     description: `- Mr. Zhang has served as our Chief Financial Officer since June 2022. 
+// - Mr. Zhang worked as a headquarter analyst at Eaton Square M&A Advisory Firm in Australia from 2014 to 2020. 
+// - Mr. Zhang worked as an auditor at ShineWing Certified Public Accountants from 2009 to 2013. 
+// - Mr. Zhang holds a Bachelor Degree of Management Accounting from Aston University, a Master Degree of Banking and Finance from Monash University, and a Master Degree of Financial Management from the Australian National University. In addition, Mr. Zhang is a fellow member of the Association of Chartered Certified Accountants in the United Kingdom.
+// `,
+//     image:
+//       "https://res.cloudinary.com/aehl/image/upload/v1726250851/Dian_Zhang_btf9ui.png",
+//     linkedin: "",
+//   },
 ];
 
 export default function ManagementTeam() {

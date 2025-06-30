@@ -35,19 +35,6 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
     linkedin: "",
   },
-  //   {
-  //     name: "Bin Tan",
-  //     position: "COO",
-  //     description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
-  // - Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd since October 2021.
-  // - Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
-  // - Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
-  // - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.
-  // `,
-  //     image:
-  //       "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
-  //     linkedin: "",
-  //   }
   {
     name: "Huashu Yuan",
     position:
@@ -74,19 +61,32 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1726250850/Zicen_Liao_lev4zy.png",
     linkedin: "",
   },
-  {
-    name: "Xiaoyue Zhang",
+    {
+    name: "Linxi Xie",
     position: "Chair of Compensation Committee, Director",
-    description: `- Ms. Zhang has served as our Independent Director since March 2025.
-    - Ms. Zhang has been an investment manager with Antelope Enterprise Holdings Ltd. since May 2021.
-    - Ms. Zhang served as a securities affairs representative with Hiseas International Tourism Group from 2019 to 2021.
-    - Ms. Zhang was previously an auditor with BDO China Shu Lun Pan Certified Public Accountants LLP from 2018 to 2019.
-    - Ms. Zhang received a Bachelor of Accounting from University of Adelaide.
+    description: `Linxi Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
+    Since May 2020, she has been serving as a Partner at Antelope Holdings (Chengdu) Co., Ltd., where she has led multiple overseas IPO projects and advised on listing strategy, M&A planning, and financing. 
+    From March 2013 to September 2016, Ms. Xie worked as Head of the Asset Management Department at Sichuan Xinglian'an Asset Management Co., Ltd., where she supported the company’s setup and later managed capital operations and business oversight. 
+    Ms. Xie holds a degree in Business Administration (Online Education Program) from the University of Electronic Science and Technology of China. 
+    She holds a Fund Practitioner Qualification Certificate and is a Certified Financial Planner (CFP).
     `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250852/Xiaoyue_Zhang_zmrhke.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1751294330/2_ql2dzs.png",
     linkedin: "",
   },
+  // {
+  //   name: "Xiaoyue Zhang",
+  //   position: "Chair of Compensation Committee, Director",
+  //   description: `- Ms. Zhang has served as our Independent Director since March 2025.
+  //   - Ms. Zhang has been an investment manager with Antelope Enterprise Holdings Ltd. since May 2021.
+  //   - Ms. Zhang served as a securities affairs representative with Hiseas International Tourism Group from 2019 to 2021.
+  //   - Ms. Zhang was previously an auditor with BDO China Shu Lun Pan Certified Public Accountants LLP from 2018 to 2019.
+  //   - Ms. Zhang received a Bachelor of Accounting from University of Adelaide.
+  //   `,
+  //   image:
+  //     "https://res.cloudinary.com/aehl/image/upload/v1726250852/Xiaoyue_Zhang_zmrhke.png",
+  //   linkedin: "",
+  // },
 ];
 
 export default function About() {
