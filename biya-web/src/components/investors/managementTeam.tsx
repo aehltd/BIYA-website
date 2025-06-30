@@ -27,12 +27,11 @@ const board: BoardEntry[] = [
     {
     name: "Dan Bin",
     position: "Chief Financial Officer",
-    description: `is a seasoned finance professional with over 12 years of experience in corporate financial management across the manufacturing and technology sectors. 
-    Since March 2023, she has been serving as the Finance Director of Chengdu Jinkeyulu Technology Co., Ltd. 
-    In this position, she leads strategic planning, internal controls, budgeting, and financial risk management. 
-    From September 2019 to December 2022, Ms. Bin served as the Finance Manager at Chongqing Jinzhima Machinery Manufacturing Co., Ltd., where she developed a five-year finance strategy, optimized cost structures, and supported business expansion. 
-    From October 2014 to August 2019, she held financial leadership roles at Chongqing Tianxin Consulting Services Co., Ltd., and from March 2013 to January 2014, she worked at Chengdu Mingqing Machinery Co., Ltd. as a Finance Supervisor. 
-    Ms. Bin holds a bachelor’s degree in Accounting Information Systems from Sichuan Normal University and a master’s degree in Software Engineering from the University of Electronic Science and Technology of China.
+    description: `- Dan Bin is a seasoned finance professional with over 12 years of experience in corporate financial management across the manufacturing and technology sectors. 
+    - Since March 2023, she has been serving as the Finance Director of Chengdu Jinkeyulu Technology Co., Ltd. 
+    - In this position, she leads strategic planning, internal controls, budgeting, and financial risk management. 
+    - From September 2019 to December 2022, Ms. Bin served as the Finance Manager at Chongqing Jinzhima Machinery Manufacturing Co., Ltd., where she developed a five-year finance strategy, optimized cost structures, and supported business expansion. 
+    - Ms. Bin holds a bachelor’s degree in Accounting Information Systems from Sichuan Normal University and a master’s degree in Software Engineering from the University of Electronic Science and Technology of China.
 `,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1751294329/1_xcgd5r.png",

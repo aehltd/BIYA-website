@@ -64,11 +64,10 @@ const board: BoardEntry[] = [
     {
     name: "Linxi Xie",
     position: "Chair of Compensation Committee, Director",
-    description: `Linxi Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
-    Since May 2020, she has been serving as a Partner at Antelope Holdings (Chengdu) Co., Ltd., where she has led multiple overseas IPO projects and advised on listing strategy, M&A planning, and financing. 
-    From March 2013 to September 2016, Ms. Xie worked as Head of the Asset Management Department at Sichuan Xinglian'an Asset Management Co., Ltd., where she supported the company’s setup and later managed capital operations and business oversight. 
-    Ms. Xie holds a degree in Business Administration (Online Education Program) from the University of Electronic Science and Technology of China. 
-    She holds a Fund Practitioner Qualification Certificate and is a Certified Financial Planner (CFP).
+    description: `- Linxi Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
+    - Since May 2020, she has been serving as a Partner at Antelope Holdings (Chengdu) Co., Ltd., where she has led multiple overseas IPO projects and advised on listing strategy, M&A planning, and financing. 
+    - Ms. Xie holds a degree in Business Administration (Online Education Program) from the University of Electronic Science and Technology of China. 
+    - She holds a Fund Practitioner Qualification Certificate and is a Certified Financial Planner (CFP).
     `,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1751294330/2_ql2dzs.png",
