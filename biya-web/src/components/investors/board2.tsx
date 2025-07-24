@@ -13,16 +13,6 @@ type BoardEntry = {
 };
 
 const board: BoardEntry[] = [
-  // {
-  //   name: "Weilai Zhang",
-  //   position: "Chairman Appointee, Director",
-  //   description: `- Mr. Zhang has served as our Chairman of the Board since March 2025 and has been our director since August 2022.
-  //   - Mr. Zhang is responsible for our overall strategic planning.
-  //   - Mr. Zhang has extensive experience in business management and marketing, has incubated a series of fast-growing financial technology companies, and successfully invested in many start-up companies.`,
-  //   image:
-  //     "https://res.cloudinary.com/aehl/image/upload/v1726250854/Weilai_Zhang_ltfocj.png",
-  //   linkedin: "https://www.linkedin.com/in/aehl/",
-  // },
   {
     name: "Siyu Yang",
     position: "Chief Executive Officer and Chairman",
