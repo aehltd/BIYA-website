@@ -13,20 +13,20 @@ type BoardEntry = {
 };
 
 const board: BoardEntry[] = [
-  {
-    name: "Weilai Zhang",
-    position: "Chairman Appointee, Director",
-    description: `- Mr. Zhang has served as our Chairman of the Board since March 2025 and has been our director since August 2022.
-    - Mr. Zhang is responsible for our overall strategic planning.
-    - Mr. Zhang has extensive experience in business management and marketing, has incubated a series of fast-growing financial technology companies, and successfully invested in many start-up companies.`,
-    image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250854/Weilai_Zhang_ltfocj.png",
-    linkedin: "https://www.linkedin.com/in/aehl/",
-  },
+  // {
+  //   name: "Weilai Zhang",
+  //   position: "Chairman Appointee, Director",
+  //   description: `- Mr. Zhang has served as our Chairman of the Board since March 2025 and has been our director since August 2022.
+  //   - Mr. Zhang is responsible for our overall strategic planning.
+  //   - Mr. Zhang has extensive experience in business management and marketing, has incubated a series of fast-growing financial technology companies, and successfully invested in many start-up companies.`,
+  //   image:
+  //     "https://res.cloudinary.com/aehl/image/upload/v1726250854/Weilai_Zhang_ltfocj.png",
+  //   linkedin: "https://www.linkedin.com/in/aehl/",
+  // },
   {
     name: "Siyu Yang",
-    position: "Chief Executive Officer and Director",
-    description: `- Ms. Yang has been our Chief Executive Officer and director since October 2021.
+    position: "Chief Executive Officer and Chairman",
+    description: `- Ms. Yang has been our Chief Executive Officer since October 2021 and Chairman since July 11, 2025.
     - Ms. Yang has extensive knowledge in the investment field, as well as a solid foundation of business practice experience and professional skills. 
     - Ms. Yang, as the founder of Sichuan Xinhaisheng Labor Service Co., Ltd., served as that company’s Chief Executive Officer responsible for the strategy and project management of business output.
     - Ms. Yang also served as a senior executive of a cultural communication company and was responsible for the national vocational education promotion and former vocational skills retraining. 
@@ -72,6 +72,17 @@ const board: BoardEntry[] = [
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1751294330/2_ql2dzs.png",
     linkedin: "",
+  },
+  {
+    name: "Luting Zhang",
+    position: "Director",
+    description: `- Ms. Zhang is a seasoned legal professional with extensive experience in capital markets and commercial law.
+    - She served at the Chenghua District People's Court, handling over 200 enforcement cases and pioneering innovative legal practices in asset tracing, legal drafting, and client negotiations.
+    - In private practice, she has managed a wide range of civil and commercial disputes, including contracts, equity, and construction, and has played a key role in case strategy and settlement agreements.
+    - Ms. Zhang holds a Class A Legal Professional Qualification Certificate and a Bachelor of Laws from Fuzhou University of International Business and Economics. Her combined experience in both the judicial system and private litigation underscores her strong understanding of procedural law and dispute resolution.
+    `,
+    image: "/images/people/luting_zheng.jpg", 
+    linkedin: "", // Add LinkedIn URL if available
   },
   // {
   //   name: "Xiaoyue Zhang",

@@ -15,8 +15,8 @@ type BoardEntry = {
 const board: BoardEntry[] = [
   {
     name: "Siyu Yang",
-    position: "Chief Executive Officer and Director",
-    description: `- Ms. Yang has been our Chief Executive Officer and director since October 2021. 
+    position: "Chief Executive Officer and Chairman",
+    description: `- Ms. Yang has been our Chief Executive Officer since October 2021 and Chairman since July 11, 2025. 
 - Ms. Yang has extensive knowledge in the investment field, as well as a solid foundation of business practice experience and professional skills. 
 - Ms. Yang, as the founder of Sichuan Xinhaisheng Labor Service Co., Ltd., served as that company’s Chief Executive Officer responsible for the strategy and project management of business output. 
 - Ms. Yang also served as a senior executive of a cultural communication company and was responsible for the national vocational education promotion and former vocational skills retraining.`,
