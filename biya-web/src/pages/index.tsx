@@ -12,7 +12,7 @@ export default function Home() {
         <Grid container spacing={2}>
           <Grid size={12}>
             <h1 className="text-black font-kanit font-bold tracking-widest py-4 text-4xl capitalize">
-              Lean about our Business Model<span className="material-symbols-outlined text-7xl pl-1">enterprise</span>
+              Learn about our Business Model<span className="material-symbols-outlined text-7xl pl-1">enterprise</span>
             </h1>
           </Grid>
           <Grid size={{ xs: 12, md: 8 }}>
