@@ -51,7 +51,7 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1726250850/Zicen_Liao_lev4zy.png",
     linkedin: "",
   },
-    {
+  {
     name: "Linxi Xie",
     position: "Chair of Compensation Committee, Director",
     description: `- Ms. Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
@@ -71,7 +71,8 @@ const board: BoardEntry[] = [
     - In private practice, she has managed a wide range of civil and commercial disputes, including contracts, equity, and construction, and has played a key role in case strategy and settlement agreements.
     - Ms. Zhang holds a Class A Legal Professional Qualification Certificate and a Bachelor of Laws from Fuzhou University of International Business and Economics. Her combined experience in both the judicial system and private litigation underscores her strong understanding of procedural law and dispute resolution.
     `,
-    image: "/images/people/luting_zheng.jpg", 
+    image:
+      "https://res.cloudinary.com/aehl/image/upload/v1754590254/luting_zheng_hc2qqo.jpg",
     linkedin: "", // Add LinkedIn URL if available
   },
   // {
