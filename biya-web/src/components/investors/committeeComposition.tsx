@@ -40,13 +40,11 @@ function createData(
 }
 
 const rows = [
-    // createData('Weilai Zhang', "", "", ""),
-    // createData('Siyu Yang', "", "", ""),
-    // createData('Bin Tan', "", "", ""),
-    // createData('Dian Zhang', "", "", ""),
-    createData('Zicen Liao', "(1) (2) (3)", "(1)", "(1)"),
-    createData('Xiaoyue Zhang', "(1) ", "(1) (2)", "(1) "),
+    createData('Siyu Yang', "(1) ", "(1) ", "(1) "),
     createData('Huashu Yuan', "(1) ", "(1) ", "(1) (2)"),
+    createData('Yankun Wang', "(1) (2) ", "(1) ", "(1) "),
+    createData('Linxi Xie', "(1) ", "(1) (2) ", "(1) "),
+    createData('Luting Zhang', "(1) ", "(1) ", "(1) "),
 ];
 
 const CommitteeComposition: React.FC = () => {

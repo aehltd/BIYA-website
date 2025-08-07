@@ -39,16 +39,15 @@ const board: BoardEntry[] = [
     linkedin: "",
   },
   {
-    name: "Zicen Liao",
+    name: "Yankun Wang",
     position: "Chair of Audit Committee, Director",
-    description: `- Ms. Liao has served as our Independent Director since March 2025.
-    - Ms. Liao is a professional investment manager with over 5 years of experience in conducting industry, market and company-specific research and financial due diligence, with a focus on start-up and growth companies.
-    - Ms. Liao is currently an investment manager in the M&amp;A Department of Antelope Enterprise Holdings Limited (NASDAQ: AEHL) since 2021.
-    - Ms. Liao was previously a project manager in Transaction Advisory Services at Grant Thornton Advisory (Beijing Office, China) from 2016 to 2020, with over 3.5 years of experience in conducting financial due diligence.
-    - Ms. Liao holds two Bachelor degrees in Mathematics and Finance from Indiana University Bloomington, Indiana State, USA.
-    `,
+    description: `- Ms. Wang is a senior HR and administration professional with over a decade of experience in human resources management, organizational development, and corporate administration. 
+    - From March 2023 to present, she worked as HR and Administration Manager at Jinke Yulv Technology Co., Ltd., where she focused on HR strategy and planning, talent supply chain development, and organizational effectiveness improvement. 
+    - From March 2019 to March 2023, she served as Deputy Director of Administration at Sichuan Jiaotou Tianfu Real Estate Co., Ltd., a subsidiary of Sichuan Jiaotou, one of China’s leading state-owned enterprises. 
+    - Ms. Wang holds a nationally accredited Economics Professional Qualification. She earned her bachelor’s degree in marketing from Sichuan Normal University.
+  `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250850/Zicen_Liao_lev4zy.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1754591221/Wang_Yankun_k27nex.png",
     linkedin: "",
   },
   {
