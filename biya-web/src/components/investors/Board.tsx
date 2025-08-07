@@ -39,10 +39,10 @@ const board: BoardEntry[] = [
     name: "Bin Tan",
     position: "COO",
     description: `- Mr. Tan has served as our Chief Operating Officer since October 2021. 
-- Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd since October 2021.
-- Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
-- Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
-- Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.
+    - Mr. Tan is also the vice president of our holding subsidiary Shenzhen Gongwuyuan Network Technology Co., Ltd since October 2021.
+    - Mr. Tan served as the general manager of the business unit in Shenzhen Diexun Technology Co., Ltd. from 2015 to 2018. 
+    - Mr. Tan served as the general manager of the business department in Shenzhen Huanan Chengwang E-Commerce Co., Ltd. from 2012 to 2015. 
+    - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.
 `,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
@@ -52,9 +52,9 @@ const board: BoardEntry[] = [
     name: "Dian Zhang",
     position: "CFO",
     description: `- Mr. Zhang has served as our Chief Financial Officer since June 2022. 
-- Mr. Zhang worked as a headquarter analyst at Eaton Square M&A Advisory Firm in Australia from 2014 to 2020. 
-- Mr. Zhang worked as an auditor at ShineWing Certified Public Accountants from 2009 to 2013. 
-- Mr. Zhang holds a Bachelor Degree of Management Accounting from Aston University, a Master Degree of Banking and Finance from Monash University, and a Master Degree of Financial Management from the Australian National University. In addition, Mr. Zhang is a fellow member of the Association of Chartered Certified Accountants in the United Kingdom.
+    - Mr. Zhang worked as a headquarter analyst at Eaton Square M&A Advisory Firm in Australia from 2014 to 2020. 
+    - Mr. Zhang worked as an auditor at ShineWing Certified Public Accountants from 2009 to 2013. 
+    - Mr. Zhang holds a Bachelor Degree of Management Accounting from Aston University, a Master Degree of Banking and Finance from Monash University, and a Master Degree of Financial Management from the Australian National University. In addition, Mr. Zhang is a fellow member of the Association of Chartered Certified Accountants in the United Kingdom.
 `,
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1726250851/Dian_Zhang_btf9ui.png",
@@ -73,15 +73,15 @@ const board: BoardEntry[] = [
     linkedin: "",
   },
   {
-    name: "Zicen Liao",
+    name: "Yankun Wang",
     position: "Chair of Audit Committee, Director",
-    description: `- Ms. Liao is a professional investment manager with over 5 years of experience in conducting industry, market and company-specific research and financial due diligence, with a focus on start-up and growth companies. 
-- Ms. Liao is currently an investment manager in the M&A Department of Antelope Enterprise Holdings Limited (NASDAQ: AEHL) since 2021. 
-- Ms. Liao was previously a project manager in Transaction Advisory Services at Grant Thornton Advisory (Beijing Office, China) from 2016 to 2020, with over 3.5 years of experience in conducting financial due diligence. 
-- Ms. Liao holds two Bachelor degrees in Mathematics and Finance from Indiana University Bloomington, Indiana State, USA.
-`,
+    description: `- Ms. Wang is a senior HR and administration professional with over a decade of experience in human resources management, organizational development, and corporate administration. 
+    - From March 2023 to present, she worked as HR and Administration Manager at Jinke Yulv Technology Co., Ltd., where she focused on HR strategy and planning, talent supply chain development, and organizational effectiveness improvement. 
+    - From March 2019 to March 2023, she served as Deputy Director of Administration at Sichuan Jiaotou Tianfu Real Estate Co., Ltd., a subsidiary of Sichuan Jiaotou, one of China’s leading state-owned enterprises. 
+    - Ms. Wang holds a nationally accredited Economics Professional Qualification. She earned her bachelor’s degree in marketing from Sichuan Normal University.
+  `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250850/Zicen_Liao_lev4zy.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1754591221/Wang_Yankun_k27nex.png",
     linkedin: "",
   },
   {
