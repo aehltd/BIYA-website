@@ -46,6 +46,10 @@ const FAQ: FAQItem[] = [
     question: "Who is Baiya’s legal counsel?",
     answer: "Lewis Brisbois Bisgaard & Smith LLP, 45 Fremont Street, Suite 3000 San Francisco, CA 94105.",
   },
+  {
+    question: "When did the Company become a public company?",
+    answer: "March 21, 2025.",
+  }
 ];
 
 
