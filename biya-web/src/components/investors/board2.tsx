@@ -53,7 +53,8 @@ const board: BoardEntry[] = [
   {
     name: "Linxi Xie",
     position: "Chair of Compensation Committee, Director",
-    description: `- Ms. Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
+    description: `- Ms. Xie has served as our Independent Director since June 2025.
+    - Ms. Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
     - Since May 2020, she has been serving as a Partner at Antelope Holdings (Chengdu) Co., Ltd., where she has led multiple overseas IPO projects and advised on listing strategy, M&A planning, and financing. 
     - Ms. Xie holds a degree in Business Administration (Online Education Program) from the University of Electronic Science and Technology of China. 
     - She holds a Fund Practitioner Qualification Certificate and is a Certified Financial Planner (CFP).
@@ -65,7 +66,8 @@ const board: BoardEntry[] = [
   {
     name: "Luting Zhang",
     position: "Director",
-    description: `- Ms. Zhang is a seasoned legal professional with extensive experience in capital markets and commercial law.
+    description: `- Ms. Zhang has served as our Director since July 2025.
+    - Ms. Zhang is a seasoned legal professional with extensive experience in capital markets and commercial law.
     - She served at the Chenghua District People's Court, handling over 200 enforcement cases and pioneering innovative legal practices in asset tracing, legal drafting, and client negotiations.
     - In private practice, she has managed a wide range of civil and commercial disputes, including contracts, equity, and construction, and has played a key role in case strategy and settlement agreements.
     - Ms. Zhang holds a Class A Legal Professional Qualification Certificate and a Bachelor of Laws from Fuzhou University of International Business and Economics. Her combined experience in both the judicial system and private litigation underscores her strong understanding of procedural law and dispute resolution.

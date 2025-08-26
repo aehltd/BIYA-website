@@ -27,7 +27,8 @@ const board: BoardEntry[] = [
     {
     name: "Dan Bin",
     position: "Chief Financial Officer",
-    description: `- Ms. Bin is a seasoned finance professional with over 12 years of experience in corporate financial management across the manufacturing and technology sectors. 
+    description: `- Ms. Bin has served as our Chief Financial Officer since June 2025.
+    - Ms. Bin is a seasoned finance professional with over 12 years of experience in corporate financial management across the manufacturing and technology sectors. 
     - Since March 2023, she has been serving as the Finance Director of Chengdu Jinkeyulu Technology Co., Ltd. 
     - In this position, she leads strategic planning, internal controls, budgeting, and financial risk management. 
     - From September 2019 to December 2022, Ms. Bin served as the Finance Manager at Chongqing Jinzhima Machinery Manufacturing Co., Ltd., where she developed a five-year finance strategy, optimized cost structures, and supported business expansion. 
