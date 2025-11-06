@@ -33,7 +33,6 @@ const navItems = [
     name: "About",
     path: "/about",
   },
-  // { name: "BIYA-Media", path: "/biya-media" },
   {
     name: "Investors",
     path: "/investors-overview",
