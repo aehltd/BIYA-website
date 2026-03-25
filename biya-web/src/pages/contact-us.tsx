@@ -25,14 +25,14 @@ export default function NotFound() {
               <Typography variant="h6">Address:</Typography>
 
               <Typography variant="body1">
-                Suite 7540, The Empire State Building, 350 Fifth Ave, New York, New York, 10118
+                Room 18022, Floor 18, 112 W. 34th Street, New York, NY 10120
               </Typography>
               <br />
               <Typography variant="h6">Phone:</Typography>
-              <Typography variant="body1">+1 (838) 900 - 8888</Typography>
+              <Typography variant="body1">+1 (838)-900-8888</Typography>
               <br />
               <Typography variant="h6">Email:</Typography>
-              <Typography variant="body1">weilaizhang@baiyainc.com</Typography>
+              <Typography variant="body1">siyuyang@biyainc.com</Typography>
               <br />
             </Box>
             <Box>
