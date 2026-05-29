@@ -6,7 +6,7 @@ export default function HomePageBanner() {
         className="h-[65vh] flex"
         style={{
           backgroundImage:
-            'url("https://res.cloudinary.com/aehl/image/upload/v1726508826/image2_dqhtmb.png")',
+            'url("/images/investors-banner.webp")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

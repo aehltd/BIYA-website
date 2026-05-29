@@ -9,7 +9,7 @@ export default function AboutPageBanner() {
         className="h-[85vh] flex"
         style={{
           backgroundImage:
-            'url("https://res.cloudinary.com/aehl/image/upload/v1734017694/BIYA_about_us_-1_on1sbm.png")',
+            'url("/images/about-us-banner.webp")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

@@ -34,7 +34,7 @@ export default function Home() {
           <Grid size={{ xs: 12, md: 4 }}>
             <Image
               className="rounded-lg"
-              src="https://res.cloudinary.com/aehl/image/upload/v1733326254/BIYA_cjet8q.png"
+              src="/images/business-model.webp"
               alt="Business Description"
               width={700} // Replace with the actual width of the image
               height={500} // Replace with the actual height of the image

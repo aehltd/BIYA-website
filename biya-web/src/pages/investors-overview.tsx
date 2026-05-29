@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 import InvestorsPageBanner from "../components/banner/investorsPageBanner";
 import Typography from "@mui/material/Typography";
@@ -30,10 +31,13 @@ export default function About() {
             </Typography>
           </Grid>
           <Grid size={12}>
-            <img
-              src="https://res.cloudinary.com/aehl/image/upload/v1726508826/banner4_rwlixj.png"
+            <Image
+              src="/images/investor-overview-banner.webp"
               alt="Business Description"
-            ></img>
+              width={1600}
+              height={900}
+              className="w-full h-auto"
+            />
           </Grid>
           <Grid size={12}>
             <Typography variant="body1" gutterBottom>
@@ -57,10 +61,13 @@ export default function About() {
             </Typography>
           </Grid>
           <Grid size={6}>
-            <img
-              src="https://res.cloudinary.com/aehl/image/upload/v1726508826/image1_w1beek.png"
+            <Image
+              src="/images/investor-financials.webp"
               alt="Business Description"
-            ></img>
+              width={1000}
+              height={700}
+              className="w-full h-auto"
+            />
           </Grid>
           <Grid size={6}>
             <Typography variant="h6" gutterBottom>
