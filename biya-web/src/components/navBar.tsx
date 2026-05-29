@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import IrNavBar from "../components/irNavBar";
 
@@ -146,7 +147,13 @@ export default function DrawerAppBar(props: Props) {
           <div className="flex items-center">
             <div className="w-20">
               <Link href="/">
-                <img src="https://res.cloudinary.com/aehl/image/upload/v1726162466/icon_black_gt3hur.png"></img>
+                <Image
+                  src="/images/biya-logo.webp"
+                  alt="Baiya logo"
+                  width={80}
+                  height={80}
+                  className="w-full h-auto"
+                />
               </Link>
             </div>
             <Typography className="px-5 md:flex hidden capitalize" variant="h6">

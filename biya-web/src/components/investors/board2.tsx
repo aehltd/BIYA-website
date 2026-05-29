@@ -22,7 +22,7 @@ const board: BoardEntry[] = [
     - Ms. Yang also served as a senior executive of a cultural communication company and was responsible for the national vocational education promotion and former vocational skills retraining. 
     `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
+      "/images/board-siyu-yang.webp",
     linkedin: "",
   },
   {
@@ -35,7 +35,7 @@ const board: BoardEntry[] = [
       - Ms. Yuan received a Bachelor’s Degree in Communication and Rhetoric Studies at University of Wisconsin-Madison, and a Master Degree of Emerging Media Studies at Boston University.
       `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250853/Huashu_Yuan_roqma7.png",
+      "/images/board-huashu-yuan.webp",
     linkedin: "",
   },
   {
@@ -47,7 +47,7 @@ const board: BoardEntry[] = [
     - Ms. Wang holds a nationally accredited Economics Professional Qualification. She earned her bachelor’s degree in marketing from Sichuan Normal University.
   `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1754591221/Wang_Yankun_k27nex.png",
+      "/images/board-yankun-wang.webp",
     linkedin: "",
   },
   {
@@ -60,7 +60,7 @@ const board: BoardEntry[] = [
     - She holds a Fund Practitioner Qualification Certificate and is a Certified Financial Planner (CFP).
     `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1751294330/2_ql2dzs.png",
+      "/images/board-linxi-xie.webp",
     linkedin: "",
   },
   {
@@ -73,7 +73,7 @@ const board: BoardEntry[] = [
     - Ms. Zhang holds a Class A Legal Professional Qualification Certificate and a Bachelor of Laws from Fuzhou University of International Business and Economics. Her combined experience in both the judicial system and private litigation underscores her strong understanding of procedural law and dispute resolution.
     `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1754590254/luting_zheng_hc2qqo.jpg",
+      "/images/board-luting-zhang.webp",
     linkedin: "", // Add LinkedIn URL if available
   },
   // {

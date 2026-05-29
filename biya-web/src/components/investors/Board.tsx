@@ -20,7 +20,7 @@ const board: BoardEntry[] = [
     - Mr. Zhang is responsible for our overall strategic planning. 
     - Mr. Zhang has extensive experience in business management and marketing, has incubated a series of fast-growing financial technology companies, and successfully invested in many start-up companies.`,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250854/Weilai_Zhang_ltfocj.png",
+      "/images/board-weilai-zhang.webp",
     linkedin: "https://www.linkedin.com/in/aehl/",
   },
   {
@@ -32,7 +32,7 @@ const board: BoardEntry[] = [
     - Ms. Yang also served as a senior executive of a cultural communication company and was responsible for the national vocational education promotion and former vocational skills retraining. 
     `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
+      "/images/board-siyu-yang.webp",
     linkedin: "",
   },
   {
@@ -45,7 +45,7 @@ const board: BoardEntry[] = [
     - Mr. Tan served as the Director of Product Operations in Shenzhen Penghaiyun Electronic Data Interchange Co., Ltd. from 2007 to 2012.
 `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250853/Bin_Tan_rlblvw.png",
+      "/images/board-bin-tan.webp",
     linkedin: "",
   },
   {
@@ -57,7 +57,7 @@ const board: BoardEntry[] = [
     - Mr. Zhang holds a Bachelor Degree of Management Accounting from Aston University, a Master Degree of Banking and Finance from Monash University, and a Master Degree of Financial Management from the Australian National University. In addition, Mr. Zhang is a fellow member of the Association of Chartered Certified Accountants in the United Kingdom.
 `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250851/Dian_Zhang_btf9ui.png",
+      "/images/board-dian-zhang.webp",
     linkedin: "",
   },
   {
@@ -69,7 +69,7 @@ const board: BoardEntry[] = [
       - Ms. Yuan received a Bachelor’s Degree in Communication and Rhetoric Studies at University of Wisconsin-Madison, and a Master Degree of Emerging Media Studies at Boston University.
       `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250853/Huashu_Yuan_roqma7.png",
+      "/images/board-huashu-yuan.webp",
     linkedin: "",
   },
   {
@@ -81,7 +81,7 @@ const board: BoardEntry[] = [
     - Ms. Wang holds a nationally accredited Economics Professional Qualification. She earned her bachelor’s degree in marketing from Sichuan Normal University.
   `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1754591221/Wang_Yankun_k27nex.png",
+      "/images/board-yankun-wang.webp",
     linkedin: "",
   },
   {
@@ -93,7 +93,7 @@ const board: BoardEntry[] = [
 - Ms. Zhang received a Bachelor of Accounting from University of Adelaide.
 `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250852/Xiaoyue_Zhang_zmrhke.png",
+      "/images/board-xiaoyue-zhang.webp",
     linkedin: "",
   },
 ];

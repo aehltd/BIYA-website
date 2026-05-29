@@ -21,7 +21,7 @@ const board: BoardEntry[] = [
 - Ms. Yang, as the founder of Sichuan Xinhaisheng Labor Service Co., Ltd., served as that company’s Chief Executive Officer responsible for the strategy and project management of business output. 
 - Ms. Yang also served as a senior executive of a cultural communication company and was responsible for the national vocational education promotion and former vocational skills retraining.`,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1726250852/Siyu_Yang_zqfwni.png",
+      "/images/board-siyu-yang.webp",
     linkedin: "",
   },
     {
@@ -35,7 +35,7 @@ const board: BoardEntry[] = [
     - Ms. Bin holds a bachelor’s degree in Accounting Information Systems from Sichuan Normal University and a master’s degree in Software Engineering from the University of Electronic Science and Technology of China.
 `,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1751294329/1_xcgd5r.png",
+      "/images/management-dan-bin.webp",
     linkedin: "",
   },
 //   {

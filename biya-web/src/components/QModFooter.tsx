@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function QModFooter() {
   useEffect(() => {
@@ -49,9 +50,11 @@ export default function QModFooter() {
       .
       <div className="qmf-logo">
         <a href="https://www.quotemedia.com">
-          <img
-            src="//www.quotemedia.com/footer/logo.png"
+          <Image
+            src="/images/quotemedia-logo.png"
             alt="QuoteMedia logo"
+            width={120}
+            height={24}
           />
         </a>
       </div>

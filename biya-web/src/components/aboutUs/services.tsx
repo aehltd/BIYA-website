@@ -23,7 +23,7 @@ const Services: React.FC = () => {
                 </Grid>
                 <Grid size={{ xs: 12, md: 5 }}>
                     <Image
-                        src="https://res.cloudinary.com/aehl/image/upload/v1734018946/job_dhv9gu.png"
+                        src="/images/job-matching.webp"
                         alt="Business Description"
                         width={500} // Replace with the actual width of the image
                         height={100} // Replace with the actual height of the image
@@ -37,7 +37,7 @@ const Services: React.FC = () => {
                 </Grid>
                 <Grid size={{ xs: 12, md: 5 }}>
                     <Image
-                        src="https://res.cloudinary.com/aehl/image/upload/v1734019106/interview_ajyued.png"
+                        src="/images/entrusted-recruitment.webp"
                         alt="Business Description"
                         width={500} // Replace with the actual width of the image
                         height={100} // Replace with the actual height of the image

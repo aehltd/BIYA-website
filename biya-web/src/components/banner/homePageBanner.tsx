@@ -20,7 +20,7 @@ export default function HomePageBanner() {
         className="h-[85vh] flex"
         style={{
           backgroundImage:
-            'url("https://res.cloudinary.com/aehl/image/upload/v1733324964/Hotels_Business_Website_rp2b6a.png")',
+            'url("/images/hotels-business-banner.webp")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
