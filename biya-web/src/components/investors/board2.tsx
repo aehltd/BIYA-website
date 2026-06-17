@@ -14,15 +14,15 @@ type BoardEntry = {
 
 const board: BoardEntry[] = [
   {
-    name: "Siyu Yang",
-    position: "Chief Executive Officer and Chairman",
-    description: `- Ms. Yang has been our Chief Executive Officer since October 2021 and Chairman since July 11, 2025.
-    - Ms. Yang has extensive knowledge in the investment field, as well as a solid foundation of business practice experience and professional skills. 
-    - Ms. Yang, as the founder of Sichuan Xinhaisheng Labor Service Co., Ltd., served as that company’s Chief Executive Officer responsible for the strategy and project management of business output.
-    - Ms. Yang also served as a senior executive of a cultural communication company and was responsible for the national vocational education promotion and former vocational skills retraining. 
+    name: "Linxi Xie",
+    position: "Chairman and Chief Executive Officer",
+    description: `- Ms. Xie has served as our Chief Executive Officer and Chairman of the Board since June 2026.
+    - Ms. Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets.
+    - Ms. Xie has been serving as a Partner at Antelope Holdings (Chengdu) Co., Ltd. since May 2020.
+    - Ms. Xie worked as Head of the Asset Management Department at Sichuan Xinglian'an Asset Management Co., Ltd. from March 2013 to September 2016.
+    - Ms. Xie holds a degree in Business Administration (Online Education Program) from the University of Electronic Science and Technology of China.
     `,
-    image:
-      "/images/board-siyu-yang.webp",
+    image: "/images/board-linxi-xie.webp",
     linkedin: "",
   },
   {
@@ -31,11 +31,10 @@ const board: BoardEntry[] = [
       "Chair of Nominating and Corporate Governance Committee, Director",
     description: `- Ms. Yuan has served as our Independent Director since March 2025.
       - Ms. Yuan has extensive professional knowledge in the media field, as well as a solid foundation of business practice experience and professional skills.
-      - Ms. Yuan, as the social media specialist, worked for WG Empire in New York.
-      - Ms. Yuan received a Bachelor’s Degree in Communication and Rhetoric Studies at University of Wisconsin-Madison, and a Master Degree of Emerging Media Studies at Boston University.
+      - Ms. Yuan, as the social media specialist, worked for WG Empire in New York.
+      - Ms. Yuan received a Bachelor's Degree in Communication and Rhetoric Studies at University of Wisconsin-Madison, and a Master Degree of Emerging Media Studies at Boston University.
       `,
-    image:
-      "/images/board-huashu-yuan.webp",
+    image: "/images/board-huashu-yuan.webp",
     linkedin: "",
   },
   {
@@ -43,24 +42,10 @@ const board: BoardEntry[] = [
     position: "Chair of Audit Committee, Director",
     description: `- Ms. Wang is a senior HR and administration professional with over a decade of experience in human resources management, organizational development, and corporate administration. 
     - From March 2023 to present, she worked as HR and Administration Manager at Jinke Yulv Technology Co., Ltd., where she focused on HR strategy and planning, talent supply chain development, and organizational effectiveness improvement. 
-    - From March 2019 to March 2023, she served as Deputy Director of Administration at Sichuan Jiaotou Tianfu Real Estate Co., Ltd., a subsidiary of Sichuan Jiaotou, one of China’s leading state-owned enterprises. 
-    - Ms. Wang holds a nationally accredited Economics Professional Qualification. She earned her bachelor’s degree in marketing from Sichuan Normal University.
+    - From March 2019 to March 2023, she served as Deputy Director of Administration at Sichuan Jiaotou Tianfu Real Estate Co., Ltd., a subsidiary of Sichuan Jiaotou, one of China's leading state-owned enterprises. 
+    - Ms. Wang holds a nationally accredited Economics Professional Qualification. She earned her bachelor's degree in marketing from Sichuan Normal University.
   `,
-    image:
-      "/images/board-yankun-wang.webp",
-    linkedin: "",
-  },
-  {
-    name: "Linxi Xie",
-    position: "Chair of Compensation Committee, Director",
-    description: `- Ms. Xie has served as our Independent Director since June 2025.
-    - Ms. Xie has over ten years of experience in the financial industry, focusing on overseas IPOs and cross-border capital markets. 
-    - Since May 2020, she has been serving as a Partner at Antelope Holdings (Chengdu) Co., Ltd., where she has led multiple overseas IPO projects and advised on listing strategy, M&A planning, and financing. 
-    - Ms. Xie holds a degree in Business Administration (Online Education Program) from the University of Electronic Science and Technology of China. 
-    - She holds a Fund Practitioner Qualification Certificate and is a Certified Financial Planner (CFP).
-    `,
-    image:
-      "/images/board-linxi-xie.webp",
+    image: "/images/board-yankun-wang.webp",
     linkedin: "",
   },
   {
@@ -72,23 +57,9 @@ const board: BoardEntry[] = [
     - In private practice, she has managed a wide range of civil and commercial disputes, including contracts, equity, and construction, and has played a key role in case strategy and settlement agreements.
     - Ms. Zhang holds a Class A Legal Professional Qualification Certificate and a Bachelor of Laws from Fuzhou University of International Business and Economics. Her combined experience in both the judicial system and private litigation underscores her strong understanding of procedural law and dispute resolution.
     `,
-    image:
-      "/images/board-luting-zhang.webp",
-    linkedin: "", // Add LinkedIn URL if available
+    image: "/images/board-luting-zhang.webp",
+    linkedin: "",
   },
-  // {
-  //   name: "Xiaoyue Zhang",
-  //   position: "Chair of Compensation Committee, Director",
-  //   description: `- Ms. Zhang has served as our Independent Director since March 2025.
-  //   - Ms. Zhang has been an investment manager with Antelope Enterprise Holdings Ltd. since May 2021.
-  //   - Ms. Zhang served as a securities affairs representative with Hiseas International Tourism Group from 2019 to 2021.
-  //   - Ms. Zhang was previously an auditor with BDO China Shu Lun Pan Certified Public Accountants LLP from 2018 to 2019.
-  //   - Ms. Zhang received a Bachelor of Accounting from University of Adelaide.
-  //   `,
-  //   image:
-  //     "https://res.cloudinary.com/aehl/image/upload/v1726250852/Xiaoyue_Zhang_zmrhke.png",
-  //   linkedin: "",
-  // },
 ];
 
 export default function About() {

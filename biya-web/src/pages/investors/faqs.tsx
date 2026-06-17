@@ -32,7 +32,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question: "Who is Baiya's independent Certified Public Accountant?",
-    answer: "Kreit & Chiu CPA LLP is Baiya’s independent auditor.",
+    answer: "Onestop Assurance PAC, 10 Anson Road, #21-14, International Plaza, Singapore 079903. To contact, please call +65 6883 5647.",
   },
   {
     question: "Who is Baiya's investor relations firm?",
@@ -44,7 +44,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question: "Who is Baiya’s legal counsel?",
-    answer: "Lewis Brisbois Bisgaard & Smith LLP, 45 Fremont Street, Suite 3000 San Francisco, CA 94105.",
+    answer: "Carter Ledyard & Milburn LLP, 28 Liberty Street, 41st Floor, New York, New York 10005. To contact, please call 212-732-3200.",
   },
   {
     question: "When did the Company become a public company?",
