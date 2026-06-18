@@ -18,11 +18,11 @@ function createData(
 }
 
 const rows = [
-  createData('The Code of Ethics', 'Frozen yoghurt'),
-  createData('The Charter of the Audit Committee','Frozen yoghurt'),
-  createData('The Charter of the Nomination Committee', 'Frozen yoghurt'),
-  createData('The Charter of the Compensation Committee', 'Frozen yoghurt'),
-  createData('Whistleblower Policy of China Ceramics', 'Frozen yoghurt'),
+  createData('The Code of Ethics', '/documents/code-of-ethics.pdf'),
+  createData('The Charter of the Audit Committee', '/documents/charter-audit-committee.pdf'),
+  createData('The Charter of the Nomination Committee', '/documents/charter-nomination-committee.pdf'),
+  createData('The Charter of the Compensation Committee', '/documents/charter-compensation-committee.pdf'),
+  createData('Whistleblower Policy of China Ceramics', '/documents/whistleblower-policy.pdf'),
 ];
 
 export default function DocumentsTable() {
@@ -44,9 +44,19 @@ export default function DocumentsTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right"><Button variant="text" color="info">
-                <FileDownloadIcon/>
-              </Button></TableCell>
+              <TableCell align="right">
+                <Button
+                  variant="text"
+                  color="info"
+                  component="a"
+                  href={row.fileLink}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FileDownloadIcon />
+                </Button>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

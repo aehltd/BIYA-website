@@ -40,11 +40,9 @@ function createData(
 }
 
 const rows = [
-    createData('Siyu Yang', "(1) ", "(1) ", "(1) "),
     createData('Huashu Yuan', "(1) ", "(1) ", "(1) (2)"),
-    createData('Yankun Wang', "(1) (2) ", "(1) ", "(1) "),
+    createData('Yankun Wang', "(1) (2) (3) ", "(1) ", "(1) "),
     createData('Linxi Xie', "(1) ", "(1) (2) ", "(1) "),
-    createData('Luting Zhang', "(1) ", "(1) ", "(1) "),
 ];
 
 const CommitteeComposition: React.FC = () => {
