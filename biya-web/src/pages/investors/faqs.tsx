@@ -8,11 +8,11 @@ type FAQItem = {
 const FAQ: FAQItem[] = [
   {
     question: "What is Baiya's business?",
-    answer: "Baiya's business focuses on providing flexible employment solutions in China through its Gongwuyuan Platform, offering job matching, recruitment, labor dispatching, and SaaS-enabled HR services for blue-collar workers.",
+    answer: "Baiya operates an intelligent SaaS-enabled new-economy human capital platform focused on the full lifecycle management of freelance talent. Through its online intelligent matching system, Baiya provides precise matching services between enterprise clients and freelancers, along with standardized management tools and workflows.",
   },
   {
     question: "What are Baiya's ticker symbol, exchange, and CUSIP?",
-    answer: "Baiya’s ordinary shares are traded on the NASDAQ Capital Market under the symbol 'BIYA.' The CUSIP number is G07064101 for the ordinary shares.",
+    answer: "Baiya’s ordinary shares are traded on the NASDAQ Capital Market under the symbol 'BIYA.' The CUSIP number is G07064127 for the ordinary shares.",
   },
   {
     question: "When was Baiya founded?",
@@ -20,7 +20,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question: "How many of the Company's shares are outstanding?",
-    answer: "As of December 31, 2024, there were approximately 12.5 million ordinary shares outstanding (12.875 million ordinary shares if the underwriters exercise their over-allotment option in full). Our ordinary shares are trading on the NASDAQ Capital Market.",
+    answer: "As of July 13, 2026, the Company had approximately 2.7 million ordinary shares outstanding.",
   },
   {
     question: "When is the next earnings release?",
@@ -44,7 +44,7 @@ const FAQ: FAQItem[] = [
   },
   {
     question: "Who is Baiya’s legal counsel?",
-    answer: "Carter Ledyard & Milburn LLP, 28 Liberty Street, 41st Floor, New York, New York 10005. To contact, please call 212-732-3200.",
+    answer: "Womble Bond Dickinson (US) LLP, 888 7th Ave, 38th Floor, New York, NY 10106. To contact, please call (332) 258-8400.",
   },
   {
     question: "When did the Company become a public company?",
